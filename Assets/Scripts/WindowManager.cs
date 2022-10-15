@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Rendering.LookDev;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class WindowManager : MonoBehaviour
 {
@@ -10,16 +12,15 @@ public class WindowManager : MonoBehaviour
         Cursor.visible = false;   
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ToggleFullScreen(InputAction.CallbackContext context)
     {
-        if (Input.GetButtonDown("Fullscreen"))
-        {
-            Screen.fullScreen = !Screen.fullScreen;
-        }
-        if (Input.GetKeyDown("escape"))
-        {
-            Application.Quit();
-        }
+        if (context.phase != InputActionPhase.Performed) return;
+        Screen.fullScreen = !Screen.fullScreen;
+    }
+
+    public void Quit(InputAction.CallbackContext context)
+    {
+        if (context.phase != InputActionPhase.Performed) return;
+        Application.Quit();
     }
 }
