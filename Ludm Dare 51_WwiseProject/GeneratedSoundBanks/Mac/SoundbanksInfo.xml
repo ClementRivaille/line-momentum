@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="1825460718">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3589812408" Language="SFX" Hash="798467188">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music_SoundBank</ObjectPath>
+			<ShortName>Music_SoundBank</ShortName>
+			<Path>Music_SoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2628159538" Name="Play_Fail" ObjectPath="\Events\Default Work Unit\Play_Fail" DurationType="OneShot" DurationMin="1.329342" DurationMax="1.329342">
+					<IncludedMemoryFiles>
+						<File Id="1056272183" Language="SFX">
+							<ShortName>hit-hat.wav</ShortName>
+							<Path>SFX\hit-hat_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="66630324" Language="SFX">
+							<ShortName>Level_1\Level1 Cello Pizzicato Render 0.wav</ShortName>
+							<Path>SFX\Level_1\Level1 Cello Pizzicato Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="171094702" Language="SFX">
+							<ShortName>Level_3\Level3 Marimba Render 0.wav</ShortName>
+							<Path>SFX\Level_3\Level3 Marimba Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="172485300" Language="SFX">
+							<ShortName>Level_4\Level4 Cello Pizzicato Render 0.wav</ShortName>
+							<Path>SFX\Level_4\Level4 Cello Pizzicato Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="200334130" Language="SFX">
+							<ShortName>Ending.wav</ShortName>
+							<Path>SFX\Ending_D79FB2B7.wem</Path>
+						</File>
+						<File Id="214956562" Language="SFX">
+							<ShortName>Level_4\Level4 Flutes Render 0.wav</ShortName>
+							<Path>SFX\Level_4\Level4 Flutes Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="232522700" Language="SFX">
+							<ShortName>Level_1\Level1 Marimba Render 0.wav</ShortName>
+							<Path>SFX\Level_1\Level1 Marimba Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="253656401" Language="SFX">
+							<ShortName>Level_2\Level2 Guitar Render 0.wav</ShortName>
+							<Path>SFX\Level_2\Level2 Guitar Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="302404687" Language="SFX">
+							<ShortName>Level_3\Level3 Guitar Render 0.wav</ShortName>
+							<Path>SFX\Level_3\Level3 Guitar Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="336159238" Language="SFX">
+							<ShortName>Level_2\Level2 Charango Render 0.wav</ShortName>
+							<Path>SFX\Level_2\Level2 Charango Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="365508424" Language="SFX">
+							<ShortName>Level_1\Level1 Guitar Render 0.wav</ShortName>
+							<Path>SFX\Level_1\Level1 Guitar Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="394342343" Language="SFX">
+							<ShortName>Level_2\Level2 Piano Render 0.wav</ShortName>
+							<Path>SFX\Level_2\Level2 Piano Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="443936497" Language="SFX">
+							<ShortName>Level_2\Level2 Pizzicato Render 0.wav</ShortName>
+							<Path>SFX\Level_2\Level2 Pizzicato Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="458391835" Language="SFX">
+							<ShortName>Level_4\Level4 Pizzicato Render 0.wav</ShortName>
+							<Path>SFX\Level_4\Level4 Pizzicato Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="582692736" Language="SFX">
+							<ShortName>Level_3\Level3 Cellis Render 0.wav</ShortName>
+							<Path>SFX\Level_3\Level3 Cellis Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="599529706" Language="SFX">
+							<ShortName>Level_2\Level2 Marimba Render 0.wav</ShortName>
+							<Path>SFX\Level_2\Level2 Marimba Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="653157198" Language="SFX">
+							<ShortName>Level_4\Level4 Charango Render 0.wav</ShortName>
+							<Path>SFX\Level_4\Level4 Charango Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="674120242" Language="SFX">
+							<ShortName>Level_3\Level3 Cello Pizzicato Render 0.wav</ShortName>
+							<Path>SFX\Level_3\Level3 Cello Pizzicato Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="684741970" Language="SFX">
+							<ShortName>Level_3\Level3 Clarinet Render 0.wav</ShortName>
+							<Path>SFX\Level_3\Level3 Clarinet Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="707328310" Language="SFX">
+							<ShortName>Level1 Piano Render 0.wav</ShortName>
+							<Path>SFX\Level1 Piano Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="732041479" Language="SFX">
+							<ShortName>Level_2\Level2 Cellis Render 0.wav</ShortName>
+							<Path>SFX\Level_2\Level2 Cellis Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="800582581" Language="SFX">
+							<ShortName>Level_1\Level1 Charango Render 0.wav</ShortName>
+							<Path>SFX\Level_1\Level1 Charango Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="818343816" Language="SFX">
+							<ShortName>Level_2\Level2 Flutes Render 0.wav</ShortName>
+							<Path>SFX\Level_2\Level2 Flutes Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="829948067" Language="SFX">
+							<ShortName>Level_4\Level4 Guitar Render 0.wav</ShortName>
+							<Path>SFX\Level_4\Level4 Guitar Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="855879339" Language="SFX">
+							<ShortName>Level_1\Level1 Flutes Render 0.wav</ShortName>
+							<Path>SFX\Level_1\Level1 Flutes Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="892274022" Language="SFX">
+							<ShortName>Level_4\Level4 Piano Render 0.wav</ShortName>
+							<Path>SFX\Level_4\Level4 Piano Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="923731464" Language="SFX">
+							<ShortName>Level_4\Level4 Vibra Render 0.wav</ShortName>
+							<Path>SFX\Level_4\Level4 Vibra Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="994415552" Language="SFX">
+							<ShortName>Level_1\Level1 Pizzicato Render 0.wav</ShortName>
+							<Path>SFX\Level_1\Level1 Pizzicato Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1037946972" Language="SFX">
+							<ShortName>Level_3\Level3 Vibra Render 0.wav</ShortName>
+							<Path>SFX\Level_3\Level3 Vibra Render 0_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{73C27F1F-0C70-459C-A800-E658C1B7CFA2}">
+							<Media>
+								<File Id="66630324"/>
+								<File Id="232522700"/>
+								<File Id="365508424"/>
+								<File Id="707328310"/>
+								<File Id="800582581"/>
+								<File Id="855879339"/>
+								<File Id="994415552"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{DCCE6374-D5B9-4965-A2A3-71063DBA55AF}">
+							<Media>
+								<File Id="253656401"/>
+								<File Id="336159238"/>
+								<File Id="394342343"/>
+								<File Id="443936497"/>
+								<File Id="599529706"/>
+								<File Id="732041479"/>
+								<File Id="818343816"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{4C1A517D-017D-40E7-8376-94873BE63C6F}">
+							<Media>
+								<File Id="171094702"/>
+								<File Id="302404687"/>
+								<File Id="582692736"/>
+								<File Id="674120242"/>
+								<File Id="684741970"/>
+								<File Id="1037946972"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{3D13F315-A66E-400A-BFC8-7C003BFF80BB}">
+							<Media>
+								<File Id="172485300"/>
+								<File Id="214956562"/>
+								<File Id="458391835"/>
+								<File Id="653157198"/>
+								<File Id="829948067"/>
+								<File Id="892274022"/>
+								<File Id="923731464"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{3F6DC4A1-88E6-49C2-AB96-4BCF4879937B}">
+							<Media>
+								<File Id="200334130"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetState>
+						<ActionSetStateEntry Id="2678230382" Name="Level1" ObjectPath="\States\Default Work Unit\Level\Level1"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3943614907" Name="Play_Success" ObjectPath="\Events\Default Work Unit\Play_Success" DurationType="OneShot" DurationMin="1.105555" DurationMax="1.11196">
+					<IncludedMemoryFiles>
+						<File Id="965030957" Language="SFX">
+							<ShortName>claves.wav</ShortName>
+							<Path>SFX\claves_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="308635872" Name="Progress" ObjectPath="\Game Parameters\Default Work Unit\Progress"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="2678230382" Name="Level1" ObjectPath="\States\Default Work Unit\Level\Level1" GUID="{73C27F1F-0C70-459C-A800-E658C1B7CFA2}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="2782712965" Name="Level" ObjectPath="\States\Default Work Unit\Level" GUID="{303885F8-7504-428E-AD04-B23E0C15380A}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Level\None" GUID="{9D14C0DF-4D3E-4547-A2CA-20D845E95F14}"/>
+						<State Id="2678230382" Name="Level1" ObjectPath="\States\Default Work Unit\Level\Level1" GUID="{73C27F1F-0C70-459C-A800-E658C1B7CFA2}"/>
+						<State Id="2678230381" Name="Level2" ObjectPath="\States\Default Work Unit\Level\Level2" GUID="{DCCE6374-D5B9-4965-A2A3-71063DBA55AF}"/>
+						<State Id="2678230380" Name="Level3" ObjectPath="\States\Default Work Unit\Level\Level3" GUID="{4C1A517D-017D-40E7-8376-94873BE63C6F}"/>
+						<State Id="2678230379" Name="Level4" ObjectPath="\States\Default Work Unit\Level\Level4" GUID="{3D13F315-A66E-400A-BFC8-7C003BFF80BB}"/>
+						<State Id="3966194980" Name="Ending" ObjectPath="\States\Default Work Unit\Level\Ending" GUID="{3F6DC4A1-88E6-49C2-AB96-4BCF4879937B}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="336214873" Name="Level4Layers" ObjectPath="\Switches\Default Work Unit\Level4Layers" GUID="{8653ABD5-A924-4FF9-B018-B15EAC60DD6C}">
+					<Switches>
+						<Switch Id="3298531297" Name="Layer1" ObjectPath="\Switches\Default Work Unit\Level4Layers\Layer1" GUID="{4E69CE1C-3772-42F6-B147-370491F70E1F}"/>
+						<Switch Id="3298531298" Name="Layer2" ObjectPath="\Switches\Default Work Unit\Level4Layers\Layer2" GUID="{79E790CF-E5AB-4BA9-9B77-5FCF14C6B277}"/>
+						<Switch Id="3298531299" Name="Layer3" ObjectPath="\Switches\Default Work Unit\Level4Layers\Layer3" GUID="{89BACA7A-E7D7-470E-A8FD-512B5B018A28}"/>
+						<Switch Id="3298531300" Name="Layer4" ObjectPath="\Switches\Default Work Unit\Level4Layers\Layer4" GUID="{09F11618-0051-45B9-B5DD-E838524AACFD}"/>
+						<Switch Id="3298531301" Name="Layer5" ObjectPath="\Switches\Default Work Unit\Level4Layers\Layer5" GUID="{F814BF56-1A5E-4610-B0C7-BD14690B6A78}"/>
+						<Switch Id="3298531302" Name="Layer6" ObjectPath="\Switches\Default Work Unit\Level4Layers\Layer6" GUID="{73982D5F-BF5B-449A-8FA0-0CEA1F891B3B}"/>
+						<Switch Id="3298531303" Name="Layer7" ObjectPath="\Switches\Default Work Unit\Level4Layers\Layer7" GUID="{97EEA3DE-9F3F-458A-83FF-46B9683E57C0}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3011217259" Name="Level2Layers" ObjectPath="\Switches\Default Work Unit\Level2Layers" GUID="{0FC1D8D8-1C33-4BE9-BA04-2CCE230CECF9}">
+					<Switches>
+						<Switch Id="3298531297" Name="Layer1" ObjectPath="\Switches\Default Work Unit\Level2Layers\Layer1" GUID="{EBB44925-0017-4DDA-B8A0-5957598982D5}"/>
+						<Switch Id="3298531298" Name="Layer2" ObjectPath="\Switches\Default Work Unit\Level2Layers\Layer2" GUID="{F35D5103-5F2F-4F04-86CD-7219DA9E3087}"/>
+						<Switch Id="3298531299" Name="Layer3" ObjectPath="\Switches\Default Work Unit\Level2Layers\Layer3" GUID="{51533B4B-59F6-4BD1-AF20-FB1AE469F9DC}"/>
+						<Switch Id="3298531300" Name="Layer4" ObjectPath="\Switches\Default Work Unit\Level2Layers\Layer4" GUID="{F9125164-03F0-49BF-9E1E-4E8A66F5E49F}"/>
+						<Switch Id="3298531301" Name="Layer5" ObjectPath="\Switches\Default Work Unit\Level2Layers\Layer5" GUID="{A6BBB390-2306-4B44-B8DA-429AD0CA3B25}"/>
+						<Switch Id="3298531302" Name="Layer6" ObjectPath="\Switches\Default Work Unit\Level2Layers\Layer6" GUID="{B15D4649-B661-4F79-B42D-19D5B9FB0E98}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3776735618" Name="Level3Layers" ObjectPath="\Switches\Default Work Unit\Level3Layers" GUID="{A4F5E9AA-DB59-416F-B34A-D65114F21660}">
+					<Switches>
+						<Switch Id="3298531297" Name="Layer1" ObjectPath="\Switches\Default Work Unit\Level3Layers\Layer1" GUID="{B6790B7E-9510-4325-A5EF-66166E086C95}"/>
+						<Switch Id="3298531298" Name="Layer2" ObjectPath="\Switches\Default Work Unit\Level3Layers\Layer2" GUID="{EBADC9F9-E350-4439-9220-CE0F78474585}"/>
+						<Switch Id="3298531299" Name="Layer3" ObjectPath="\Switches\Default Work Unit\Level3Layers\Layer3" GUID="{D9E787E7-8626-4346-AC92-7C961E6F4CBE}"/>
+						<Switch Id="3298531300" Name="Layer4" ObjectPath="\Switches\Default Work Unit\Level3Layers\Layer4" GUID="{C378113D-B45A-4BA2-9EBB-176C732C7967}"/>
+						<Switch Id="3298531301" Name="Layer5" ObjectPath="\Switches\Default Work Unit\Level3Layers\Layer5" GUID="{4E74772C-4395-48A6-9217-8DF9B2F4C0E5}"/>
+						<Switch Id="3298531302" Name="Layer6" ObjectPath="\Switches\Default Work Unit\Level3Layers\Layer6" GUID="{3AFEB826-CF7D-4456-BDE9-9CEB2921E16B}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3915065012" Name="Level1Layers" ObjectPath="\Switches\Default Work Unit\Level1Layers" GUID="{995783E6-FF39-4673-9497-22ED6F21A810}">
+					<Switches>
+						<Switch Id="3298531297" Name="Layer1" ObjectPath="\Switches\Default Work Unit\Level1Layers\Layer1" GUID="{507578D1-648F-46AB-9A3B-D006B2504597}"/>
+						<Switch Id="3298531298" Name="Layer2" ObjectPath="\Switches\Default Work Unit\Level1Layers\Layer2" GUID="{19A63FDF-C5E2-441F-A333-5EF8230EAE1A}"/>
+						<Switch Id="3298531299" Name="Layer3" ObjectPath="\Switches\Default Work Unit\Level1Layers\Layer3" GUID="{C3425158-D1D5-46D1-B521-52789A5A56DF}"/>
+						<Switch Id="3298531300" Name="Layer4" ObjectPath="\Switches\Default Work Unit\Level1Layers\Layer4" GUID="{71523295-13D6-42A6-892E-B1EA2A023578}"/>
+						<Switch Id="3298531301" Name="Layer5" ObjectPath="\Switches\Default Work Unit\Level1Layers\Layer5" GUID="{FD41F736-C2CD-4F3D-A210-13FBED6ADFDA}"/>
+						<Switch Id="3298531302" Name="Layer6" ObjectPath="\Switches\Default Work Unit\Level1Layers\Layer6" GUID="{35BF1566-33BB-47E2-91DD-C43FABF48CB3}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

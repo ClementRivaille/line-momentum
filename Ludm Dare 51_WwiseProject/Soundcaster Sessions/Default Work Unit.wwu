@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1301F484-AC2E-4BE6-8DC8-9F191CC3AA5A}" SchemaVersion="103">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{1301F484-AC2E-4BE6-8DC8-9F191CC3AA5A}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Game test" ID="{DF78EDF9-EC2D-47AD-BF94-B90D3BEE174C}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Music" ID="{431B0960-C139-4FD7-A738-FECFF3D15108}" WorkUnitID="{15034F94-5602-4BA5-8097-982FD704F12A}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Success" ID="{1FF06EF5-E4F4-40EB-9D9F-2ECCAB877FAB}" WorkUnitID="{15034F94-5602-4BA5-8097-982FD704F12A}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Fail" ID="{6050BFF2-BFB1-493F-8478-C76138078467}" WorkUnitID="{15034F94-5602-4BA5-8097-982FD704F12A}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Progress" ID="{AA06989B-CDFD-47A0-98BE-7ECB9BBCD57E}"/>
+							<Value>5.9</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Level2" ID="{DCCE6374-D5B9-4965-A2A3-71063DBA55AF}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Layer1" ID="{B6790B7E-9510-4325-A5EF-66166E086C95}"/>
+						<CurrentSwitchRef Name="Layer1" ID="{507578D1-648F-46AB-9A3B-D006B2504597}"/>
+						<CurrentSwitchRef Name="Layer1" ID="{EBB44925-0017-4DDA-B8A0-5957598982D5}"/>
+						<CurrentSwitchRef Name="Layer1" ID="{4E69CE1C-3772-42F6-B147-370491F70E1F}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

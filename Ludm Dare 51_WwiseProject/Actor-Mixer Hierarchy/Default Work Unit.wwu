@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D6CC30CD-09E1-44D0-BCF6-C787AEE9C6C5}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{D6CC30CD-09E1-44D0-BCF6-C787AEE9C6C5}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="SFX" ID="{54484495-A0AE-4318-8484-48DCC478F771}" ShortID="539118015">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{043139C8-4373-4B27-ABE9-1010B3402B55}"/>
+						</Reference>
+						<Reference Name="Effect0">
+							<Custom>
+								<Effect Name="Wwise Matrix Reverb (Custom)" ID="{E9F52E5A-6D04-4412-A054-AFB741ED1B52}" ShortID="438790630" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+									<PropertyList>
+										<Property Name="DryLevel" Type="Real32" Value="-11.3"/>
+										<Property Name="HFRatio" Type="Real32" Value="4.1"/>
+										<Property Name="ReverbTime" Type="Real32" Value="2.5"/>
+										<Property Name="WetLevel" Type="Real32" Value="-40"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3624E84B-9D33-4911-957A-2BDEE1537685}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="claves" ID="{3BD3734B-E681-4F0A-9074-F3003D0B89B6}" ShortID="941113532">
+							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{EAF9FDEF-3576-46A7-ACD4-79A9D0E0E092}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0257CBF2-8AD7-4236-A4E1-5717DB4A5DA3}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="5"/>
+													<Property Name="Min" Type="Real64" Value="-5"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{043139C8-4373-4B27-ABE9-1010B3402B55}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3624E84B-9D33-4911-957A-2BDEE1537685}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="claves" ID="{93F362A7-78FB-4519-A363-4C995174F9A7}">
+									<Language>SFX</Language>
+									<AudioFile>claves.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="965030957"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="claves" ID="{93F362A7-78FB-4519-A363-4C995174F9A7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="hit-hat" ID="{692CD1D1-B600-4CDB-8E80-283424764224}" ShortID="849692211">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{043139C8-4373-4B27-ABE9-1010B3402B55}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3624E84B-9D33-4911-957A-2BDEE1537685}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="hit-hat" ID="{987A89E7-4228-41E5-88F5-78C6620C0734}">
+									<Language>SFX</Language>
+									<AudioFile>hit-hat.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1056272183"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="hit-hat" ID="{987A89E7-4228-41E5-88F5-78C6620C0734}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

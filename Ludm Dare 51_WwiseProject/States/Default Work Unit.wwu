@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{36F0BF19-CB7B-42E3-8579-4DB8C92CC0E9}" SchemaVersion="103">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{36F0BF19-CB7B-42E3-8579-4DB8C92CC0E9}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Level" ID="{303885F8-7504-428E-AD04-B23E0C15380A}">
+					<ChildrenList>
+						<State Name="None" ID="{9D14C0DF-4D3E-4547-A2CA-20D845E95F14}"/>
+						<State Name="Level1" ID="{73C27F1F-0C70-459C-A800-E658C1B7CFA2}"/>
+						<State Name="Level2" ID="{DCCE6374-D5B9-4965-A2A3-71063DBA55AF}"/>
+						<State Name="Level3" ID="{4C1A517D-017D-40E7-8376-94873BE63C6F}"/>
+						<State Name="Level4" ID="{3D13F315-A66E-400A-BFC8-7C003BFF80BB}"/>
+						<State Name="Ending" ID="{3F6DC4A1-88E6-49C2-AB96-4BCF4879937B}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

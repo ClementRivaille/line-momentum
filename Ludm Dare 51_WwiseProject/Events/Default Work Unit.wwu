@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{15034F94-5602-4BA5-8097-982FD704F12A}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{15034F94-5602-4BA5-8097-982FD704F12A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Music" ID="{431B0960-C139-4FD7-A738-FECFF3D15108}">
+					<ChildrenList>
+						<Action Name="" ID="{0D9DE332-4736-46EF-AF59-201D70681E47}" ShortID="160408094">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{CB7313A0-0869-41A2-929C-8739520D3CCF}" WorkUnitID="{A7EF2D2C-2E51-42C2-BAFC-7D2D7889F94A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F8BB5AEB-4C67-4EFC-9F74-6F66B899CE7B}" ShortID="476436417">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Level1" ID="{73C27F1F-0C70-459C-A800-E658C1B7CFA2}" WorkUnitID="{36F0BF19-CB7B-42E3-8579-4DB8C92CC0E9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{7A85D8C9-E2BC-457F-86A6-0377C178D333}" ShortID="830722944">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="39"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Progress" ID="{AA06989B-CDFD-47A0-98BE-7ECB9BBCD57E}" WorkUnitID="{362A3CB3-E465-46CD-BC4A-765D71C2D7F4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{731B892B-D987-421C-A7EA-42EAE7D88868}" ShortID="907891425">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{CB7313A0-0869-41A2-929C-8739520D3CCF}" WorkUnitID="{A7EF2D2C-2E51-42C2-BAFC-7D2D7889F94A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Success" ID="{1FF06EF5-E4F4-40EB-9D9F-2ECCAB877FAB}">
+					<ChildrenList>
+						<Action Name="" ID="{AA1DD51E-1C5E-46BD-9B9D-DD099A14A692}" ShortID="409372808">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="claves" ID="{3BD3734B-E681-4F0A-9074-F3003D0B89B6}" WorkUnitID="{D6CC30CD-09E1-44D0-BCF6-C787AEE9C6C5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Fail" ID="{6050BFF2-BFB1-493F-8478-C76138078467}">
+					<ChildrenList>
+						<Action Name="" ID="{39CCEF85-DE23-4637-B651-6AB5E07F8FF3}" ShortID="541564141">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="hit-hat" ID="{692CD1D1-B600-4CDB-8E80-283424764224}" WorkUnitID="{D6CC30CD-09E1-44D0-BCF6-C787AEE9C6C5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

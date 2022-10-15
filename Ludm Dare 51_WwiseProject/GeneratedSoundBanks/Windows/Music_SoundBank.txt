@@ -1,0 +1,54 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2628159538	Play_Fail			\Default Work Unit\Play_Fail	
+	2932040671	Play_Music			\Default Work Unit\Play_Music	
+	3943614907	Play_Success			\Default Work Unit\Play_Success	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2782712965	Level			\Default Work Unit\Level	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Level			
+	2678230379	Level4	Level			
+	2678230380	Level3	Level			
+	2678230381	Level2	Level			
+	2678230382	Level1	Level			
+	3966194980	Ending	Level			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	308635872	Progress			\Default Work Unit\Progress	
+
+Effect plug-ins	ID	Name	Type				Notes
+	438790630	Wwise Matrix Reverb (Custom)	Wwise Matrix Reverb			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	66630324	Level1 Cello Pizzicato Render 0	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\Level_1\Level1 Cello Pizzicato Render 0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level1\Level1_Layers\Level1 Cello Pizzicato Render 0		794548
+	171094702	Level3 Marimba Render 0	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\Level_3\Level3 Marimba Render 0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level3\Level3_Layers\Level3 Marimba Render 0		794548
+	172485300	Level4 Cello Pizzicato Render 0	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\Level_4\Level4 Cello Pizzicato Render 0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level4\Level4_Layers\Level4 Cello Pizzicato Render 0		794548
+	200334130	Ending	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\Ending_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Ending\Ending		4369720
+	214956562	Level4 Flutes Render 0	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\Level_4\Level4 Flutes Render 0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level4\Level4_Layers\Level4 Flutes Render 0		794548
+	232522700	Level1 Marimba Render 0	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\Level_1\Level1 Marimba Render 0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level1\Level1_Layers\Level1 Marimba Render 0		794548
+	253656401	Level2 Guitar Render 0	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\Level_2\Level2 Guitar Render 0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level2\Level2_Layers\Level2 Guitar Render 0		794548
+	302404687	Level3 Guitar Render 0	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\Level_3\Level3 Guitar Render 0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level3\Level3_Layers\Level3 Guitar Render 0		794548
+	336159238	Level2 Charango Render 0	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\Level_2\Level2 Charango Render 0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level2\Level2_Layers\Level2 Charango Render 0		794548
+	365508424	Level1 Guitar Render 0	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\Level_1\Level1 Guitar Render 0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level1\Level1_Layers\Level1 Guitar Render 0		794548
+	394342343	Level2 Piano Render 0	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\Level_2\Level2 Piano Render 0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level2\Level2_Layers\Level2 Piano Render 0		794548
+	443936497	Level2 Pizzicato Render 0	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\Level_2\Level2 Pizzicato Render 0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level2\Level2_Layers\Level2 Pizzicato Render 0		794548
+	458391835	Level4 Pizzicato Render 0	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\Level_4\Level4 Pizzicato Render 0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level4\Level4_Layers\Level4 Pizzicato Render 0		794548
+	582692736	Level3 Cellis Render 0	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\Level_3\Level3 Cellis Render 0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level3\Level3_Layers\Level3 Cellis Render 0		794548
+	599529706	Level2 Marimba Render 0	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\Level_2\Level2 Marimba Render 0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level2\Level2_Layers\Level2 Marimba Render 0		794548
+	653157198	Level4 Charango Render 0	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\Level_4\Level4 Charango Render 0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level4\Level4_Layers\Level4 Charango Render 0		794548
+	674120242	Level3 Cello Pizzicato Render 0	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\Level_3\Level3 Cello Pizzicato Render 0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level3\Level3_Layers\Level3 Cello Pizzicato Render 0		794548
+	684741970	Level3 Clarinet Render 0	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\Level_3\Level3 Clarinet Render 0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level3\Level3_Layers\Level3 Clarinet Render 0		794548
+	707328310	Level1 Piano Render 0	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\Level1 Piano Render 0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level1\Level1_Layers\Level1 Piano Render 0		794548
+	732041479	Level2 Cellis Render 0	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\Level_2\Level2 Cellis Render 0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level2\Level2_Layers\Level2 Cellis Render 0		794548
+	800582581	Level1 Charango Render 0	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\Level_1\Level1 Charango Render 0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level1\Level1_Layers\Level1 Charango Render 0		794548
+	818343816	Level2 Flutes Render 0	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\Level_2\Level2 Flutes Render 0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level2\Level2_Layers\Level2 Flutes Render 0		794548
+	829948067	Level4 Guitar Render 0	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\Level_4\Level4 Guitar Render 0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level4\Level4_Layers\Level4 Guitar Render 0		794548
+	855879339	Level1 Flutes Render 0	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\Level_1\Level1 Flutes Render 0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level1\Level1_Layers\Level1 Flutes Render 0		794548
+	892274022	Level4 Piano Render 0	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\Level_4\Level4 Piano Render 0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level4\Level4_Layers\Level4 Piano Render 0		794548
+	923731464	Level4 Vibra Render 0	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\Level_4\Level4 Vibra Render 0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level4\Level4_Layers\Level4 Vibra Render 0		794548
+	965030957	claves	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\claves_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\claves		195648
+	994415552	Level1 Pizzicato Render 0	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\Level_1\Level1 Pizzicato Render 0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level1\Level1_Layers\Level1 Pizzicato Render 0		794548
+	1037946972	Level3 Vibra Render 0	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\Level_3\Level3 Vibra Render 0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level3\Level3_Layers\Level3 Vibra Render 0		794548
+	1056272183	hit-hat	C:\Users\Itooh\Development\Ludm Dare 51\Ludm Dare 51_WwiseProject\.cache\Windows\SFX\hit-hat_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\hit-hat		234560
+

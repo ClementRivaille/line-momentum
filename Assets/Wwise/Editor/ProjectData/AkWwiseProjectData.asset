@@ -1,0 +1,811 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd72eec926c65b14cb50d8edf58e21e0, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Virtual Acoustics
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: ea1b80b918137d46a8b786a51ecc7d0a
+    ParentPath: Virtual Acoustics\Default Work Unit
+    guid: ea1b80b918137d46a8b786a51ecc7d0a
+    GuidInternal: 
+    m_lastTime: -8585369867828400362
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Master-Mixer Hierarchy
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 4be82436339d1149957a2bdee1537685
+    ParentPath: Master-Mixer Hierarchy\Default Work Unit
+    guid: 4be82436339d1149957a2bdee1537685
+    GuidInternal: 
+    m_lastTime: -8585369867828860791
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4be82436339d1149957a2bdee1537685
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: a49d86c57f61d44480b92270e8d844ae
+    ParentPath: SoundBanks\Default Work Unit
+    guid: a49d86c57f61d44480b92270e8d844ae
+    GuidInternal: 
+    m_lastTime: -8585368180286925639
+    List:
+    - name: Music_SoundBank
+      guid: 821cc0cb284a5b468eb5a26617b76939
+      id: 3589812408
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a49d86c57f61d44480b92270e8d844ae
+      - ElementName: Music_SoundBank
+        ObjectType: 7
+        guid: 821cc0cb284a5b468eb5a26617b76939
+      Path: SoundBanks\Default Work Unit\Music_SoundBank
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 944f03150256a54b8097982fd704f12a
+    ParentPath: Events\Default Work Unit
+    guid: 944f03150256a54b8097982fd704f12a
+    GuidInternal: 
+    m_lastTime: -8585368164413717916
+    List:
+    - name: Play_Fail
+      guid: f2bf5060b1bf3f498478c76138078467
+      id: 2628159538
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 944f03150256a54b8097982fd704f12a
+      - ElementName: Play_Fail
+        ObjectType: 3
+        guid: f2bf5060b1bf3f498478c76138078467
+      Path: Events\Default Work Unit\Play_Fail
+      maxAttenuation: 0
+      maxDuration: 1.329342
+      minDuration: 1.329342
+    - name: Play_Music
+      guid: 60091b4339c1d74fa738fecff3d15108
+      id: 2932040671
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 944f03150256a54b8097982fd704f12a
+      - ElementName: Play_Music
+        ObjectType: 3
+        guid: 60091b4339c1d74fa738fecff3d15108
+      Path: Events\Default Work Unit\Play_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Success
+      guid: f56ef01ff4e4eb409d9f2eccab877fab
+      id: 3943614907
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 944f03150256a54b8097982fd704f12a
+      - ElementName: Play_Success
+        ObjectType: 3
+        guid: f56ef01ff4e4eb409d9f2eccab877fab
+      Path: Events\Default Work Unit\Play_Success
+      maxAttenuation: 0
+      maxDuration: 1.11196
+      minDuration: 1.105555
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: b33c2a3665e4cd46bc4a765d71c2d7f4
+    ParentPath: Game Parameters\Default Work Unit
+    guid: b33c2a3665e4cd46bc4a765d71c2d7f4
+    GuidInternal: 
+    m_lastTime: -8585369845002794811
+    List:
+    - name: Progress
+      guid: 9b9806aafdcda04798be7ecb9bbcd57e
+      id: 308635872
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b33c2a3665e4cd46bc4a765d71c2d7f4
+      - ElementName: Progress
+        ObjectType: 13
+        guid: 9b9806aafdcda04798be7ecb9bbcd57e
+      Path: Game Parameters\Default Work Unit\Progress
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 19bff0367bcbe34285794db8c92cc0e9
+    ParentPath: States\Default Work Unit
+    guid: 19bff0367bcbe34285794db8c92cc0e9
+    GuidInternal: 
+    m_lastTime: -8585368235109723929
+    List:
+    - name: Level
+      guid: f885383004758e42ad04b23e0c15380a
+      id: 2782712965
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 19bff0367bcbe34285794db8c92cc0e9
+      - ElementName: Level
+        ObjectType: 9
+        guid: f885383004758e42ad04b23e0c15380a
+      Path: States\Default Work Unit\Level
+      values:
+      - name: Ending
+        guid: a1c46d3fe688c249ab964bcf4879937b
+        id: 3966194980
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 19bff0367bcbe34285794db8c92cc0e9
+        - ElementName: Level
+          ObjectType: 9
+          guid: f885383004758e42ad04b23e0c15380a
+        - ElementName: Ending
+          ObjectType: 8
+          guid: a1c46d3fe688c249ab964bcf4879937b
+      - name: Level1
+        guid: 1f7fc273700c9c45a800e658c1b7cfa2
+        id: 2678230382
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 19bff0367bcbe34285794db8c92cc0e9
+        - ElementName: Level
+          ObjectType: 9
+          guid: f885383004758e42ad04b23e0c15380a
+        - ElementName: Level1
+          ObjectType: 8
+          guid: 1f7fc273700c9c45a800e658c1b7cfa2
+      - name: Level2
+        guid: 7463cedcb9d56549a2a371063dba55af
+        id: 2678230381
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 19bff0367bcbe34285794db8c92cc0e9
+        - ElementName: Level
+          ObjectType: 9
+          guid: f885383004758e42ad04b23e0c15380a
+        - ElementName: Level2
+          ObjectType: 8
+          guid: 7463cedcb9d56549a2a371063dba55af
+      - name: Level3
+        guid: 7d511a4c7d01e740837694873be63c6f
+        id: 2678230380
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 19bff0367bcbe34285794db8c92cc0e9
+        - ElementName: Level
+          ObjectType: 9
+          guid: f885383004758e42ad04b23e0c15380a
+        - ElementName: Level3
+          ObjectType: 8
+          guid: 7d511a4c7d01e740837694873be63c6f
+      - name: Level4
+        guid: 15f3133d6ea60a40bfc87c003bff80bb
+        id: 2678230379
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 19bff0367bcbe34285794db8c92cc0e9
+        - ElementName: Level
+          ObjectType: 9
+          guid: f885383004758e42ad04b23e0c15380a
+        - ElementName: Level4
+          ObjectType: 8
+          guid: 15f3133d6ea60a40bfc87c003bff80bb
+      - name: None
+        guid: dfc0149d3e4d4745a2ca20d845e95f14
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 19bff0367bcbe34285794db8c92cc0e9
+        - ElementName: Level
+          ObjectType: 9
+          guid: f885383004758e42ad04b23e0c15380a
+        - ElementName: None
+          ObjectType: 8
+          guid: dfc0149d3e4d4745a2ca20d845e95f14
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Switches
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+    ParentPath: Switches\Default Work Unit
+    guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+    GuidInternal: 
+    m_lastTime: -8585368202437633990
+    List:
+    - name: Level1Layers
+      guid: e683579939ff7346949722ed6f21a810
+      id: 3915065012
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+      - ElementName: Level1Layers
+        ObjectType: 11
+        guid: e683579939ff7346949722ed6f21a810
+      Path: Switches\Default Work Unit\Level1Layers
+      values:
+      - name: Layer1
+        guid: d17875508f64ab469a3bd006b2504597
+        id: 3298531297
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Level1Layers
+          ObjectType: 11
+          guid: e683579939ff7346949722ed6f21a810
+        - ElementName: Layer1
+          ObjectType: 10
+          guid: d17875508f64ab469a3bd006b2504597
+      - name: Layer2
+        guid: df3fa619e2c51f44a3335ef8230eae1a
+        id: 3298531298
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Level1Layers
+          ObjectType: 11
+          guid: e683579939ff7346949722ed6f21a810
+        - ElementName: Layer2
+          ObjectType: 10
+          guid: df3fa619e2c51f44a3335ef8230eae1a
+      - name: Layer3
+        guid: 585142c3d5d1d146b52152789a5a56df
+        id: 3298531299
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Level1Layers
+          ObjectType: 11
+          guid: e683579939ff7346949722ed6f21a810
+        - ElementName: Layer3
+          ObjectType: 10
+          guid: 585142c3d5d1d146b52152789a5a56df
+      - name: Layer4
+        guid: 95325271d613a642892eb1ea2a023578
+        id: 3298531300
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Level1Layers
+          ObjectType: 11
+          guid: e683579939ff7346949722ed6f21a810
+        - ElementName: Layer4
+          ObjectType: 10
+          guid: 95325271d613a642892eb1ea2a023578
+      - name: Layer5
+        guid: 36f741fdcdc23d4fa21013fbed6adfda
+        id: 3298531301
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Level1Layers
+          ObjectType: 11
+          guid: e683579939ff7346949722ed6f21a810
+        - ElementName: Layer5
+          ObjectType: 10
+          guid: 36f741fdcdc23d4fa21013fbed6adfda
+      - name: Layer6
+        guid: 6615bf35bb33e24791ddc43fabf48cb3
+        id: 3298531302
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Level1Layers
+          ObjectType: 11
+          guid: e683579939ff7346949722ed6f21a810
+        - ElementName: Layer6
+          ObjectType: 10
+          guid: 6615bf35bb33e24791ddc43fabf48cb3
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Level2Layers
+      guid: d8d8c10f331ce94bba042cce230cecf9
+      id: 3011217259
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+      - ElementName: Level2Layers
+        ObjectType: 11
+        guid: d8d8c10f331ce94bba042cce230cecf9
+      Path: Switches\Default Work Unit\Level2Layers
+      values:
+      - name: Layer1
+        guid: 2549b4eb1700da4db8a05957598982d5
+        id: 3298531297
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Level2Layers
+          ObjectType: 11
+          guid: d8d8c10f331ce94bba042cce230cecf9
+        - ElementName: Layer1
+          ObjectType: 10
+          guid: 2549b4eb1700da4db8a05957598982d5
+      - name: Layer2
+        guid: 03515df32f5f044f86cd7219da9e3087
+        id: 3298531298
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Level2Layers
+          ObjectType: 11
+          guid: d8d8c10f331ce94bba042cce230cecf9
+        - ElementName: Layer2
+          ObjectType: 10
+          guid: 03515df32f5f044f86cd7219da9e3087
+      - name: Layer3
+        guid: 4b3b5351f659d14baf20fb1ae469f9dc
+        id: 3298531299
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Level2Layers
+          ObjectType: 11
+          guid: d8d8c10f331ce94bba042cce230cecf9
+        - ElementName: Layer3
+          ObjectType: 10
+          guid: 4b3b5351f659d14baf20fb1ae469f9dc
+      - name: Layer4
+        guid: 645112f9f003bf499e1e4e8a66f5e49f
+        id: 3298531300
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Level2Layers
+          ObjectType: 11
+          guid: d8d8c10f331ce94bba042cce230cecf9
+        - ElementName: Layer4
+          ObjectType: 10
+          guid: 645112f9f003bf499e1e4e8a66f5e49f
+      - name: Layer5
+        guid: 90b3bba60623444bb8da429ad0ca3b25
+        id: 3298531301
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Level2Layers
+          ObjectType: 11
+          guid: d8d8c10f331ce94bba042cce230cecf9
+        - ElementName: Layer5
+          ObjectType: 10
+          guid: 90b3bba60623444bb8da429ad0ca3b25
+      - name: Layer6
+        guid: 49465db161b6794fb42d19d5b9fb0e98
+        id: 3298531302
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Level2Layers
+          ObjectType: 11
+          guid: d8d8c10f331ce94bba042cce230cecf9
+        - ElementName: Layer6
+          ObjectType: 10
+          guid: 49465db161b6794fb42d19d5b9fb0e98
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Level3Layers
+      guid: aae9f5a459db6f41b34ad65114f21660
+      id: 3776735618
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+      - ElementName: Level3Layers
+        ObjectType: 11
+        guid: aae9f5a459db6f41b34ad65114f21660
+      Path: Switches\Default Work Unit\Level3Layers
+      values:
+      - name: Layer1
+        guid: 7e0b79b610952543a5ef66166e086c95
+        id: 3298531297
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Level3Layers
+          ObjectType: 11
+          guid: aae9f5a459db6f41b34ad65114f21660
+        - ElementName: Layer1
+          ObjectType: 10
+          guid: 7e0b79b610952543a5ef66166e086c95
+      - name: Layer2
+        guid: f9c9adeb50e339449220ce0f78474585
+        id: 3298531298
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Level3Layers
+          ObjectType: 11
+          guid: aae9f5a459db6f41b34ad65114f21660
+        - ElementName: Layer2
+          ObjectType: 10
+          guid: f9c9adeb50e339449220ce0f78474585
+      - name: Layer3
+        guid: e787e7d926864643ac927c961e6f4cbe
+        id: 3298531299
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Level3Layers
+          ObjectType: 11
+          guid: aae9f5a459db6f41b34ad65114f21660
+        - ElementName: Layer3
+          ObjectType: 10
+          guid: e787e7d926864643ac927c961e6f4cbe
+      - name: Layer4
+        guid: 3d1178c35ab4a24b9ebb176c732c7967
+        id: 3298531300
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Level3Layers
+          ObjectType: 11
+          guid: aae9f5a459db6f41b34ad65114f21660
+        - ElementName: Layer4
+          ObjectType: 10
+          guid: 3d1178c35ab4a24b9ebb176c732c7967
+      - name: Layer5
+        guid: 2c77744e9543a64892178df9b2f4c0e5
+        id: 3298531301
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Level3Layers
+          ObjectType: 11
+          guid: aae9f5a459db6f41b34ad65114f21660
+        - ElementName: Layer5
+          ObjectType: 10
+          guid: 2c77744e9543a64892178df9b2f4c0e5
+      - name: Layer6
+        guid: 26b8fe3a7dcf5644bde99ceb2921e16b
+        id: 3298531302
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Level3Layers
+          ObjectType: 11
+          guid: aae9f5a459db6f41b34ad65114f21660
+        - ElementName: Layer6
+          ObjectType: 10
+          guid: 26b8fe3a7dcf5644bde99ceb2921e16b
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Level4Layers
+      guid: d5ab538624a9f94fb018b15eac60dd6c
+      id: 336214873
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+      - ElementName: Level4Layers
+        ObjectType: 11
+        guid: d5ab538624a9f94fb018b15eac60dd6c
+      Path: Switches\Default Work Unit\Level4Layers
+      values:
+      - name: Layer1
+        guid: 1cce694e7237f642b147370491f70e1f
+        id: 3298531297
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Level4Layers
+          ObjectType: 11
+          guid: d5ab538624a9f94fb018b15eac60dd6c
+        - ElementName: Layer1
+          ObjectType: 10
+          guid: 1cce694e7237f642b147370491f70e1f
+      - name: Layer2
+        guid: cf90e779abe5a94b9b775fcf14c6b277
+        id: 3298531298
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Level4Layers
+          ObjectType: 11
+          guid: d5ab538624a9f94fb018b15eac60dd6c
+        - ElementName: Layer2
+          ObjectType: 10
+          guid: cf90e779abe5a94b9b775fcf14c6b277
+      - name: Layer3
+        guid: 7acaba89d7e70e47a8fd512b5b018a28
+        id: 3298531299
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Level4Layers
+          ObjectType: 11
+          guid: d5ab538624a9f94fb018b15eac60dd6c
+        - ElementName: Layer3
+          ObjectType: 10
+          guid: 7acaba89d7e70e47a8fd512b5b018a28
+      - name: Layer4
+        guid: 1816f1095100b945b5dde838524aacfd
+        id: 3298531300
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Level4Layers
+          ObjectType: 11
+          guid: d5ab538624a9f94fb018b15eac60dd6c
+        - ElementName: Layer4
+          ObjectType: 10
+          guid: 1816f1095100b945b5dde838524aacfd
+      - name: Layer5
+        guid: 56bf14f85e1a1046b0c7bd14690b6a78
+        id: 3298531301
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Level4Layers
+          ObjectType: 11
+          guid: d5ab538624a9f94fb018b15eac60dd6c
+        - ElementName: Layer5
+          ObjectType: 10
+          guid: 56bf14f85e1a1046b0c7bd14690b6a78
+      - name: Layer6
+        guid: 5f2d98735bbf9a448fa00cea1f891b3b
+        id: 3298531302
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Level4Layers
+          ObjectType: 11
+          guid: d5ab538624a9f94fb018b15eac60dd6c
+        - ElementName: Layer6
+          ObjectType: 10
+          guid: 5f2d98735bbf9a448fa00cea1f891b3b
+      - name: Layer7
+        guid: dea3ee973f9f8a4583ff46b9683e57c0
+        id: 3298531303
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Level4Layers
+          ObjectType: 11
+          guid: d5ab538624a9f94fb018b15eac60dd6c
+        - ElementName: Layer7
+          ObjectType: 10
+          guid: dea3ee973f9f8a4583ff46b9683e57c0
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Triggers
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: b98af36b7b5ce649957a2a48f079c080
+    ParentPath: Triggers\Default Work Unit
+    guid: b98af36b7b5ce649957a2a48f079c080
+    GuidInternal: 
+    m_lastTime: -8585369867829331211
+    List: []
+  ExpandedFileSystemItemIds: 
+  ExpandedWaapiItemIds: 01000000050000000600000008000000090000000a0000000b0000000c00000014000000150000001800000019000000
+  AutoSyncSelection: 0
+  autoPopulateEnabled: 1
+  currentDataSource: 0
+  CurrentPluginConfig: 
