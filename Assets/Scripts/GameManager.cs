@@ -5,6 +5,7 @@ using System.Runtime.Versioning;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 public enum LevelId
 {
@@ -65,53 +66,41 @@ public class GameManager : MonoBehaviour
         MusicInfoState.onBar.AddListener(StartBar);
     }
 
-    private bool GetMainButtonDown()
+    public void OnClick(InputAction.CallbackContext context)
     {
-        return Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1) || Input.GetButtonDown("Space");
-    }
+        if (context.phase != InputActionPhase.Started) return;
 
-    private void Update()
-    {
         if (state == GameState.StartScreen)
         {
-            if (GetMainButtonDown())
-            {
-                InitLevel(0);
-                state = GameState.Playing;
-                OnStartGame.Invoke();
-            }
+            InitLevel(0);
+            state = GameState.Playing;
+            OnStartGame.Invoke();
         }
         else if (state == GameState.Playing)
         {
-            if (GetMainButtonDown())
+            if (MusicInfoState.IsCloseTo(nextBeatPosition))
             {
-                if (MusicInfoState.IsCloseTo(nextBeatPosition))
-                {
-                    ValidateBeat();
-                }
-                else if (!MusicInfoState.IsCloseTo(0f))
-                {
-                    FailBar();
-                    OnFail.Invoke();
+                ValidateBeat();
+            }
+            else if (!MusicInfoState.IsCloseTo(0f))
+            {
+                FailBar();
+                OnFail.Invoke();
 
-                    if (levelSuccessFul)
-                    {
-                        InitLevel(Math.Max(0, gameFinished ? currentLevel : currentLevel - 1), true);
-                        UpdateProgress((int)ProgressNeeded - 2);
-                        levelSuccessFul = false;
-                        gameFinished = false;
-                    }
+                if (levelSuccessFul)
+                {
+                    InitLevel(Math.Max(0, gameFinished ? currentLevel : currentLevel - 1), true);
+                    UpdateProgress((int)ProgressNeeded - 2);
+                    levelSuccessFul = false;
+                    gameFinished = false;
                 }
             }
         }
         else if (state == GameState.End)
         {
-            if (GetMainButtonDown())
-            {
-                InitLevel(0);
-                state = GameState.Playing;
-                OnStartGame.Invoke();
-            }
+            InitLevel(0);
+            state = GameState.Playing;
+            OnStartGame.Invoke();
         }
     }
 
