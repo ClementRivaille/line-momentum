@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
     public UnityEvent OnMissBeat = new UnityEvent();
     public UnityEvent OnStartGame = new UnityEvent();
     public UnityEvent<int> OnUpdateProgress = new UnityEvent<int>();
+    public UnityEvent OnLevelEnd = new UnityEvent();
     public UnityEvent OnGameEnd = new UnityEvent();
     public UnityEvent OnStartCredit = new UnityEvent();
 
@@ -50,11 +51,13 @@ public class GameManager : MonoBehaviour
     private bool barEnded = false;
     private bool levelSuccessFul = false;
     private bool gameFinished = false;
+    private int transitionBar = 0;
 
     enum GameState
     {
         StartScreen,
         Playing,
+        EndLevel,
         Credits,
         End
     }
@@ -73,10 +76,11 @@ public class GameManager : MonoBehaviour
         if (state == GameState.StartScreen)
         {
             InitLevel(0);
+            transitionBar = 2;
             state = GameState.Playing;
             OnStartGame.Invoke();
         }
-        else if (state == GameState.Playing)
+        else if (state == GameState.Playing && transitionBar <= 0)
         {
             if (MusicInfoState.IsCloseTo(nextBeatPosition))
             {
@@ -89,16 +93,19 @@ public class GameManager : MonoBehaviour
 
                 if (levelSuccessFul)
                 {
-                    InitLevel(Math.Max(0, gameFinished ? currentLevel : currentLevel - 1), true);
                     UpdateProgress((int)ProgressNeeded - 2);
                     levelSuccessFul = false;
-                    gameFinished = false;
                 }
             }
+        }
+        else if (state == GameState.EndLevel && transitionBar <= 0)
+        {
+            GoToNextLevel();
         }
         else if (state == GameState.End)
         {
             InitLevel(0);
+            transitionBar = 2;
             state = GameState.Playing;
             OnStartGame.Invoke();
         }
@@ -106,7 +113,7 @@ public class GameManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (state == GameState.Playing) {
+        if (state == GameState.Playing && transitionBar <= 0) {
             if (!barEnded && MusicInfoState.IsPassed(nextBeatPosition)) {
                 MissBeat();
             }
@@ -117,6 +124,7 @@ public class GameManager : MonoBehaviour
     {
         currentLevel = idx;
         UpdateProgress(keepProgress ? progress : 0);
+        levelSuccessFul = false;
         nextBeatIdx = 0;
         UpdateNextBeatPosition();
         OnStartLevel.Invoke(levels[idx]);
@@ -132,9 +140,19 @@ public class GameManager : MonoBehaviour
     {
         barEnded = false;
         mistakes = false;
-        levelSuccessFul = false;
+        
+        if (transitionBar > 0)
+        {
+            transitionBar -= 1;
+        }
 
-        if (gameFinished)
+        if (state == GameState.Playing && levelSuccessFul && !gameFinished)
+        {
+            state = GameState.EndLevel;
+            transitionBar = 1;
+            OnLevelEnd.Invoke();
+        }
+        else if (gameFinished)
         {
             state = GameState.Credits;
             gameFinished = false;
@@ -162,21 +180,23 @@ public class GameManager : MonoBehaviour
         if (barEnded && !mistakes)
         {
             UpdateProgress(progress + 1);
+            levelSuccessFul = progress == ProgressNeeded;
+        }
+    }
 
-            if (progress == ProgressNeeded)
-            {
-                var nextLevelIdx = (currentLevel + 1) % levels.Count;
-                if (nextLevelIdx > 0)
-                {
-                    InitLevel(nextLevelIdx);
-                }
-                else
-                {
-                    gameFinished = true;
-                    OnGameEnd.Invoke();
-                }
-                levelSuccessFul = true;
-            }
+    void GoToNextLevel()
+    {
+        var nextLevelIdx = (currentLevel + 1) % levels.Count;
+        if (nextLevelIdx > 0)
+        {
+            InitLevel(nextLevelIdx);
+            transitionBar = 2;
+            state = GameState.Playing;
+        }
+        else
+        {
+            gameFinished = true;
+            OnGameEnd.Invoke();
         }
     }
 

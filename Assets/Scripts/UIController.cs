@@ -69,7 +69,7 @@ public class UIController : MonoBehaviour
             FadeScreen(StartScreen, 0.4f, false);
         } else if (Credits.alpha > 0)
         {
-            TweenFactory.Clear();
+            TweenFactory.RemoveTweenKey("Fade screen", TweenStopBehavior.DoNotModify);
             Credits.alpha = 0f;
             foreach (Transform creditSlide in Credits.transform)
             {

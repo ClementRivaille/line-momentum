@@ -43,7 +43,6 @@ public class LevelProgression : MonoBehaviour
         {
             dots.ForEach(dot => dot.gameObject.SetActive(true));
         }
-        dots[0].color = ActiveColor;
     }
 
     public void UpdateProgress(int value)
@@ -55,7 +54,7 @@ public class LevelProgression : MonoBehaviour
         for (int i = 0; i < dots.Count; i++)
         {
             var dot = dots[i];
-            if (i <= currentProgress && dot.color != ActiveColor) {
+            if (i < currentProgress && dot.color != ActiveColor) {
                 dot.gameObject.Tween("TweenColor" + i, InactiveColor, ActiveColor, 0.3f, TweenScaleFunctions.SineEaseOut, (t) =>
                 {
                     dot.color = t.CurrentValue;

@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine.Events;
 using UnityEngine;
 using System;
-
+using UnityEngine.UIElements;
 
 [CreateAssetMenu(fileName = "MusicInfo", menuName = "ScriptableObjects/MusicInfo", order = 0)]
 public class MusicInfo : ScriptableObject
@@ -22,11 +22,14 @@ public class MusicInfo : ScriptableObject
     public UnityEvent onBar = new UnityEvent();
     public UnityEvent onMusicStarted = new UnityEvent();
 
+    private List<UnityAction> oneTimeBarListeners = new List<UnityAction>();
+
     public void Init()
     {
         barPosition = 0f;
         currentTime = 0f;
         onMusicStarted.Invoke();
+        onBar.AddListener(BarActions);
     }
 
     public void updatePosition(float time)
@@ -58,5 +61,16 @@ public class MusicInfo : ScriptableObject
         return Math.Abs(barDuration - currentTime) > Precision &&
             currentTime > time &&
             (currentTime - time) > Precision;
+    }
+
+    public void DoOnNextBar(UnityAction callback)
+    {
+        oneTimeBarListeners.Add(callback);
+    }
+
+    void BarActions()
+    {
+        oneTimeBarListeners.ForEach(callback => callback());
+        oneTimeBarListeners.Clear();
     }
 }
