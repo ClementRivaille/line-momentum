@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UIElements;
 
 public enum BeatStatus
@@ -14,7 +15,8 @@ public enum BeatStatus
 public class BeatIndicator : MonoBehaviour
 {
     public SpriteRenderer Background;
-    public SpriteRenderer FailBg;
+
+    public UnityEvent OnAnimationEnd = new UnityEvent();
 
     public BeatStatus status { get; private set; } = BeatStatus.Pending;
 
@@ -30,9 +32,6 @@ public class BeatIndicator : MonoBehaviour
         
         animationManager.Play("ValidateBeat");
         status = BeatStatus.Complete;
-
-        // Ugly fix for when the reset animation didn't finish
-        FailBg.color = new Color(0f, 0f, 0f, 0f);
     }
 
     public void Fail()
@@ -58,5 +57,10 @@ public class BeatIndicator : MonoBehaviour
     {
         GetComponent<SpriteRenderer>().color = bordersColor;
         Background.color = backgroundColor;
+    }
+
+    void TriggerAnimationEnd()
+    {
+        OnAnimationEnd.Invoke();
     }
 }

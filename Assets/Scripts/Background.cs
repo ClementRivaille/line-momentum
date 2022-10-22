@@ -13,6 +13,7 @@ public class Background : MonoBehaviour
 
     private SpriteRenderer sprite;
     private Color startColor;
+    private bool transitioning = false;
 
     private void Start()
     {
@@ -22,7 +23,6 @@ public class Background : MonoBehaviour
 
     public void PrepareLevelTransition(LevelParams level)
     {
-        if (fadeLayer.color.a == 0) FadeOut(0.2f);
         MusicInfoState.DoOnNextBar(() => StartCoroutine(LevelTransition(level.color)));
     }
 
@@ -33,18 +33,27 @@ public class Background : MonoBehaviour
 
     public void PrepareCredits()
     {
-        FadeOut(0.2f);
         MusicInfoState.DoOnNextBar(() => SetColor(startColor));
     }
 
-    IEnumerator LevelTransition(Color nextColor)
+    public void CloseLevel()
     {
+        if (transitioning) return;
+        FadeOut(0.2f);
+    }
+
+    IEnumerator LevelTransition(Color levelColor)
+    {
+
+        transitioning = true;
         TweenFactory.RemoveTweenKey("BgFadeOut", TweenStopBehavior.Complete);
-        if (sprite.color != nextColor)
+        fadeLayer.color = new Color(fadeLayer.color.r, fadeLayer.color.g, fadeLayer.color.b, 1.0f);
+        if (sprite.color != levelColor)
         {
-            yield return SetColor(nextColor);
+            yield return SetColor(levelColor);
         }
         FadeIn(0.8f);
+        transitioning = false;
     }
 
     IEnumerator FadeOutIn()
