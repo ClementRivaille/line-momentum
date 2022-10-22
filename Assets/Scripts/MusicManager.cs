@@ -55,7 +55,7 @@ public class MusicManager : MonoBehaviour
     public void OnLevelStarted(LevelParams level)
     {
         level.State.SetValue();
-        Progress.SetGlobalValue(1);
+        Progress.SetGlobalValue(0);
     }
 
     public void UpdateProgress(int value)

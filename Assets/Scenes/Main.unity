@@ -1442,6 +1442,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1297098296}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: ExitLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnGameEnd:
     m_PersistentCalls:
       m_Calls:
@@ -1474,7 +1486,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1297098296}
         m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
-        m_MethodName: Hide
+        m_MethodName: Disable
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1753,6 +1765,7 @@ MonoBehaviour:
   BeatPrefab: {fileID: 5646160747564621878, guid: b5f062141c11a8646bef535f3ff977fa, type: 3}
   CrossPrefab: {fileID: 113277438801644771, guid: 1ae442732792b4e4c8898ae81083278e, type: 3}
   sprite: {fileID: 1209251169}
+  zPosition: 0
   DotDisappearanceThreshold: 5
 --- !u!1 &1361926627
 GameObject:

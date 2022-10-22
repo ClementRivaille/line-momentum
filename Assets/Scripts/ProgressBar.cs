@@ -20,6 +20,7 @@ public class ProgressBar : MonoBehaviour
     private LevelParams nextLevel;
 
     public SpriteRenderer sprite;
+    public float zPosition;
 
     private bool displayPosition = true;
     private float dotLightIntensity;
@@ -30,6 +31,7 @@ public class ProgressBar : MonoBehaviour
     {
         dotLight = CurrentPositionDot.GetComponent<Light2D>();
         dotLightIntensity = dotLight.intensity;
+        zPosition = transform.position.z;
 
         MusicInfoState.onMusicStarted.AddListener(OnMusicStart);
         CurrentPositionDot.gameObject.SetActive(false);
@@ -48,8 +50,6 @@ public class ProgressBar : MonoBehaviour
 
     public void OnMusicStart()
     {
-        CurrentPositionDot.gameObject.SetActive(true);
-        active = true;
         MusicInfoState.onBar.AddListener(UpdateBar);
     }
 
@@ -74,10 +74,10 @@ public class ProgressBar : MonoBehaviour
             autoValidateFirstBeat = false;
         }
 
-        if (!displayPosition && dotLight.intensity > 0)
+        if (active && !displayPosition && dotLight.intensity > 0)
         {
             FadeOutDot();
-        } else if (displayPosition && dotLight.intensity == 0)
+        } else if (active && displayPosition && dotLight.intensity == 0)
         {
             dotLight.intensity = dotLightIntensity;
             CurrentPositionDot.GetComponent<SpriteRenderer>().color = Color.white;
@@ -87,6 +87,7 @@ public class ProgressBar : MonoBehaviour
     void UpdateLevel()
     {
         sprite.color = nextLevel.barColor;
+        transform.position = new Vector3(transform.position.x, transform.position.y, zPosition);
 
         beats.ForEach((beat) => Destroy(beat.gameObject));
         beats.Clear();
@@ -104,6 +105,8 @@ public class ProgressBar : MonoBehaviour
         }
 
         nextLevel = null;
+
+        StartCoroutine(WaitAndActivate());
     }
 
     public void ValidateNextBeat()
@@ -136,19 +139,45 @@ public class ProgressBar : MonoBehaviour
         crosses.Add(cross);
     }
 
-    public void Hide()
+    public void Disable()
     {
-        beats.ForEach((beat) => Destroy(beat.gameObject));
-        beats.Clear();
+        transform.position = new Vector3(transform.position.x, transform.position.y, -20);
         active = false;
         CurrentPositionDot.gameObject.SetActive(false);
         MusicInfoState.onBar.RemoveListener(UpdateBar);
-        sprite.color = new Color(0, 0, 0, 0);
     }
 
     public void ProgressUpdate(int progress)
     {
         displayPosition = progress < DotDisappearanceThreshold;
+    }
+
+    public void ExitLevel()
+    {
+        active = false;
+        CurrentPositionDot.gameObject.SetActive(false);
+        StartCoroutine(WaitAndHide());
+    }
+
+    IEnumerator WaitAndHide()
+    {
+        yield return new WaitForEndOfFrame();
+        MusicInfoState.DoOnNextBar(() =>
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, -20);
+        });
+    }
+
+    IEnumerator WaitAndActivate()
+    {
+        yield return new WaitForEndOfFrame();
+        MusicInfoState.DoOnNextBar(() =>
+        {
+            CurrentPositionDot.gameObject.SetActive(true);
+            active = true;
+            dotLight.intensity = dotLightIntensity;
+            CurrentPositionDot.GetComponent<SpriteRenderer>().color = Color.white;
+        });
     }
 
     private void FadeOutDot()
