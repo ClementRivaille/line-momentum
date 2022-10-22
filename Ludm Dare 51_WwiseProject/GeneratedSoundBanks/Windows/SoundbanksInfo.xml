@@ -11,16 +11,36 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3943964940">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3300516721">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3589812408" Language="SFX" Hash="798467188">
+		<SoundBank Id="3589812408" Language="SFX" Hash="3086764452">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music_SoundBank</ObjectPath>
 			<ShortName>Music_SoundBank</ShortName>
 			<Path>Music_SoundBank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1013251259" Name="Complete_Level" ObjectPath="\Events\Default Work Unit\Complete_Level" DurationType="OneShot" DurationMin="2.068958" DurationMax="2.068958">
+					<IncludedMemoryFiles>
+						<File Id="66304021" Language="SFX">
+							<ShortName>Level4 Chord.wav</ShortName>
+							<Path>SFX\Level4 Chord_D79FB2B7.wem</Path>
+						</File>
+						<File Id="394420302" Language="SFX">
+							<ShortName>Level2 Chord.wav</ShortName>
+							<Path>SFX\Level2 Chord_D79FB2B7.wem</Path>
+						</File>
+						<File Id="712439921" Language="SFX">
+							<ShortName>Level1 Chord.wav</ShortName>
+							<Path>SFX\Level1 Chord_D79FB2B7.wem</Path>
+						</File>
+						<File Id="881413766" Language="SFX">
+							<ShortName>Level3 Chord.wav</ShortName>
+							<Path>SFX\Level3 Chord_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2628159538" Name="Play_Fail" ObjectPath="\Events\Default Work Unit\Play_Fail" DurationType="OneShot" DurationMin="1.329342" DurationMax="1.329342">
 					<IncludedMemoryFiles>
 						<File Id="1056272183" Language="SFX">

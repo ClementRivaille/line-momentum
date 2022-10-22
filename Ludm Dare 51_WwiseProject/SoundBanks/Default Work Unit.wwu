@@ -7,6 +7,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Success" ID="{1FF06EF5-E4F4-40EB-9D9F-2ECCAB877FAB}" WorkUnitID="{15034F94-5602-4BA5-8097-982FD704F12A}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Fail" ID="{6050BFF2-BFB1-493F-8478-C76138078467}" WorkUnitID="{15034F94-5602-4BA5-8097-982FD704F12A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Complete_Level" ID="{3FB118E1-02BC-4A44-A8BE-D2C80A348908}" WorkUnitID="{15034F94-5602-4BA5-8097-982FD704F12A}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Music" ID="{431B0960-C139-4FD7-A738-FECFF3D15108}" WorkUnitID="{15034F94-5602-4BA5-8097-982FD704F12A}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

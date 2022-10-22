@@ -17,15 +17,19 @@
 							<ObjectRef Name="Play_Fail" ID="{6050BFF2-BFB1-493F-8478-C76138078467}" WorkUnitID="{15034F94-5602-4BA5-8097-982FD704F12A}"/>
 							<Position X="1" Y="1"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Complete_Level" ID="{3FB118E1-02BC-4A44-A8BE-D2C80A348908}" WorkUnitID="{15034F94-5602-4BA5-8097-982FD704F12A}"/>
+							<Position X="2" Y="1"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Progress" ID="{AA06989B-CDFD-47A0-98BE-7ECB9BBCD57E}"/>
-							<Value>5.9</Value>
+							<Value>10</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Level2" ID="{DCCE6374-D5B9-4965-A2A3-71063DBA55AF}"/>
+						<CurrentStateRef Name="Level1" ID="{73C27F1F-0C70-459C-A800-E658C1B7CFA2}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Layer1" ID="{B6790B7E-9510-4325-A5EF-66166E086C95}"/>

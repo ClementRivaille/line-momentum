@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: a49d86c57f61d44480b92270e8d844ae
     GuidInternal: 
-    m_lastTime: -8585368180286925639
+    m_lastTime: -8585351558520389015
     List:
     - name: Music_SoundBank
       guid: 821cc0cb284a5b468eb5a26617b76939
@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 944f03150256a54b8097982fd704f12a
     GuidInternal: 
-    m_lastTime: -8585368164413717916
+    m_lastTime: -8585351557451680347
     List:
+    - name: Complete_Level
+      guid: e118b13fbc02444aa8bed2c80a348908
+      id: 1013251259
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 944f03150256a54b8097982fd704f12a
+      - ElementName: Complete_Level
+        ObjectType: 3
+        guid: e118b13fbc02444aa8bed2c80a348908
+      Path: Events\Default Work Unit\Complete_Level
+      maxAttenuation: 0
+      maxDuration: 2.068958
+      minDuration: 2.068958
     - name: Play_Fail
       guid: f2bf5060b1bf3f498478c76138078467
       id: 2628159538
@@ -159,7 +176,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: b33c2a3665e4cd46bc4a765d71c2d7f4
     GuidInternal: 
-    m_lastTime: -8585369845002794811
+    m_lastTime: -8585351654197892543
     List:
     - name: Progress
       guid: 9b9806aafdcda04798be7ecb9bbcd57e
@@ -315,7 +332,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 52fe7c8ead42fc47b7d904ca67e4e5be
     GuidInternal: 
-    m_lastTime: -8585368202437633990
+    m_lastTime: -8585351640722369600
     List:
     - name: Level1Layers
       guid: e683579939ff7346949722ed6f21a810
@@ -801,10 +818,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: b98af36b7b5ce649957a2a48f079c080
     GuidInternal: 
-    m_lastTime: -8585369867829331211
+    m_lastTime: -8585351558114883533
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000050000000600000008000000090000000a0000000b0000000c00000014000000150000001800000019000000
+  ExpandedWaapiItemIds: 01000000050000000600000008000000090000000a0000000b0000000c0000000e0000000f00000014000000150000001800000019000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

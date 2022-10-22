@@ -31,9 +31,10 @@ public class Background : MonoBehaviour
         StartCoroutine(FadeOutIn());
     }
 
-    public void ResetColor()
+    public void PrepareCredits()
     {
-        SetColor(startColor);
+        FadeOut(0.2f);
+        MusicInfoState.DoOnNextBar(() => SetColor(startColor));
     }
 
     IEnumerator LevelTransition(Color nextColor)

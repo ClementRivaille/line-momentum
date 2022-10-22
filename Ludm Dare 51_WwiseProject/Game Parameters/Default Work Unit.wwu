@@ -5,9 +5,8 @@
 			<ChildrenList>
 				<GameParameter Name="Progress" ID="{AA06989B-CDFD-47A0-98BE-7ECB9BBCD57E}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
 						<Property Name="Max" Type="Real64" Value="10"/>
-						<Property Name="Min" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>

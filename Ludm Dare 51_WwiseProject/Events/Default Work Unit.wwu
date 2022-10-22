@@ -67,6 +67,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Complete_Level" ID="{3FB118E1-02BC-4A44-A8BE-D2C80A348908}">
+					<ChildrenList>
+						<Action Name="" ID="{9B4F83B9-C696-41F9-984C-7142C0C70F89}" ShortID="576454272">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Chords" ID="{04F918B6-BBA9-44C5-8075-7F973AF11A31}" WorkUnitID="{A7EF2D2C-2E51-42C2-BAFC-7D2D7889F94A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

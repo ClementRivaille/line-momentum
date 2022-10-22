@@ -17,6 +17,8 @@ public class MusicManager : MonoBehaviour
 
     public AK.Wwise.State EndSong;
 
+    public AK.Wwise.Event LevelComplete;
+
     private uint PlayerID;
 
     public void PlayMusic()
@@ -58,12 +60,17 @@ public class MusicManager : MonoBehaviour
 
     public void UpdateProgress(int value)
     {
-        Progress.SetGlobalValue(value + 1);
+        Progress.SetGlobalValue(value);
     }
 
     public void PlaySuccess()
     {
         SuccessEvent.Post(gameObject);
+    }
+
+    public void PlayLevelComplete()
+    {
+        LevelComplete.Post(gameObject);
     }
 
     public void PlayFail()

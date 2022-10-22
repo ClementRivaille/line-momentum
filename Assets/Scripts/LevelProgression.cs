@@ -60,7 +60,7 @@ public class LevelProgression : MonoBehaviour
                     dot.color = t.CurrentValue;
                 });
             }
-            else if (i > currentProgress && dot.color != InactiveColor)
+            else if (i >= currentProgress && dot.color != InactiveColor)
             {
                 dot.gameObject.Tween("TweenColor" + i, ActiveColor, InactiveColor, 0.4f, TweenScaleFunctions.SineEaseInOut, (t) =>
                 {

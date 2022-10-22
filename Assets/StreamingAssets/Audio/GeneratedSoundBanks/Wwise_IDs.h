@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID COMPLETE_LEVEL = 1013251259U;
         static const AkUniqueID PLAY_FAIL = 2628159538U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_SUCCESS = 3943614907U;
