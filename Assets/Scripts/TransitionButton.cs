@@ -15,8 +15,8 @@ public class TransitionButton : MonoBehaviour
     void Start()
     {
         beat = GetComponent<BeatIndicator>();
-        zPosition = transform.position.z;
-        transform.position = new Vector3(transform.position.x, transform.position.y, -20);
+        zPosition = transform.localPosition.z;
+        transform.localPosition= new Vector3(transform.localPosition.x, transform.localPosition.y, 20f);
     }
 
     public void Show()
@@ -30,7 +30,7 @@ public class TransitionButton : MonoBehaviour
         Click();
         musicInfoState.DoOnNextBar(() =>
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y, -20);
+            transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, 20f);
             beat.SetColors(level.color, level.barColor);
         });
     }
@@ -40,7 +40,7 @@ public class TransitionButton : MonoBehaviour
         Click();
         musicInfoState.DoOnNextBar(() =>
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y, -20);
+            transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, 20f);
         });
     }
 
@@ -55,7 +55,7 @@ public class TransitionButton : MonoBehaviour
         yield return new WaitForEndOfFrame();
         musicInfoState.DoOnNextBar(() =>
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y, zPosition);
+            transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, zPosition);
         });
     }
 }

@@ -31,7 +31,7 @@ public class ProgressBar : MonoBehaviour
     {
         dotLight = CurrentPositionDot.GetComponent<Light2D>();
         dotLightIntensity = dotLight.intensity;
-        zPosition = transform.position.z;
+        zPosition = transform.localPosition.z;
 
         MusicInfoState.onMusicStarted.AddListener(OnMusicStart);
         CurrentPositionDot.gameObject.SetActive(false);
@@ -87,7 +87,7 @@ public class ProgressBar : MonoBehaviour
     void UpdateLevel()
     {
         sprite.color = nextLevel.barColor;
-        transform.position = new Vector3(transform.position.x, transform.position.y, zPosition);
+        transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, zPosition);
 
         beats.ForEach((beat) => Destroy(beat.gameObject));
         beats.Clear();
@@ -141,7 +141,7 @@ public class ProgressBar : MonoBehaviour
 
     public void Disable()
     {
-        transform.position = new Vector3(transform.position.x, transform.position.y, -20);
+        transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, 20f);
         active = false;
         CurrentPositionDot.gameObject.SetActive(false);
         MusicInfoState.onBar.RemoveListener(UpdateBar);
@@ -164,7 +164,7 @@ public class ProgressBar : MonoBehaviour
         yield return new WaitForEndOfFrame();
         MusicInfoState.DoOnNextBar(() =>
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y, -20);
+            transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, 20f);
         });
     }
 

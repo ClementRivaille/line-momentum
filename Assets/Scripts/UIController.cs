@@ -70,11 +70,7 @@ public class UIController : MonoBehaviour
         } else if (Credits.alpha > 0)
         {
             TweenFactory.RemoveTweenKey("Fade screen", TweenStopBehavior.DoNotModify);
-            Credits.alpha = 0f;
-            foreach (Transform creditSlide in Credits.transform)
-            {
-                creditSlide.gameObject.SetActive(false);
-            }
+            FadeScreen(Credits, 0.4f, false);
         }
     }
 
@@ -115,8 +111,13 @@ public class UIController : MonoBehaviour
     {
         creditsActive = true;
         creditsBar = 0;
-        Credits.alpha = 1f;
+        foreach (Transform creditSlide in Credits.transform)
+        {
+            creditSlide.gameObject.SetActive(false);
+        }
         Credits.transform.GetChild(0).gameObject.SetActive(true);
+        Credits.alpha = 0f;
+        FadeScreen(Credits, 0.6f, true);
     }
 
     private IEnumerator DisplayCreditPage(int idx)
