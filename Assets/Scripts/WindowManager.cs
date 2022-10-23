@@ -8,13 +8,22 @@ public class WindowManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.visible = false;   
+        Cursor.visible = false;
     }
 
     public void ToggleFullScreen(InputAction.CallbackContext context)
     {
         if (context.phase != InputActionPhase.Performed) return;
-        Screen.fullScreen = !Screen.fullScreen;
+        bool fullScreen = !Screen.fullScreen;
+        if (fullScreen)
+        {
+            Screen.SetResolution(Screen.currentResolution.width, Screen.currentResolution.height, FullScreenMode.FullScreenWindow);
+        } else
+        {
+            Screen.fullScreenMode = FullScreenMode.Windowed;
+            Screen.SetResolution(1280, 720, FullScreenMode.FullScreenWindow);
+        }
+        Screen.fullScreen = fullScreen;
     }
 
     public void Quit(InputAction.CallbackContext context)
