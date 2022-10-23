@@ -53,6 +53,9 @@ public class GameManager : MonoBehaviour
     private bool gameFinished = false;
     private int transitionBar = 0;
 
+    public UnityEvent<bool> OnAccessibilityUpdate = new UnityEvent<bool>();
+    private bool accessibilytyMode = false;
+
     enum GameState
     {
         StartScreen,
@@ -219,5 +222,12 @@ public class GameManager : MonoBehaviour
     public void CreditsEnded()
     {
         state = GameState.End;
+    }
+
+    public void OnToggleAccessibility(InputAction.CallbackContext context)
+    {
+        if (context.phase != InputActionPhase.Performed) return;
+        accessibilytyMode = !accessibilytyMode;
+        OnAccessibilityUpdate.Invoke(accessibilytyMode);
     }
 }

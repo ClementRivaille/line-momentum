@@ -27,6 +27,8 @@ public class ProgressBar : MonoBehaviour
     public int DotDisappearanceThreshold = 5;
     private Light2D dotLight;
 
+    private bool accessibilityDisplay = false;
+
     void Start()
     {
         dotLight = CurrentPositionDot.GetComponent<Light2D>();
@@ -149,7 +151,7 @@ public class ProgressBar : MonoBehaviour
 
     public void ProgressUpdate(int progress)
     {
-        displayPosition = progress < DotDisappearanceThreshold;
+        displayPosition = (progress < DotDisappearanceThreshold) || accessibilityDisplay;
     }
 
     public void ExitLevel()
@@ -157,6 +159,11 @@ public class ProgressBar : MonoBehaviour
         active = false;
         CurrentPositionDot.gameObject.SetActive(false);
         StartCoroutine(WaitAndHide());
+    }
+
+    public void ToggleAccessibility(bool accessibility)
+    {
+        accessibilityDisplay = accessibility;
     }
 
     IEnumerator WaitAndHide()
