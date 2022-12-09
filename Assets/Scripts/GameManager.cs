@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.Versioning;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -41,6 +42,8 @@ public class GameManager : MonoBehaviour
     public UnityEvent OnLevelEnd = new UnityEvent();
     public UnityEvent OnGameEnd = new UnityEvent();
     public UnityEvent OnStartCredit = new UnityEvent();
+    public UnityEvent<bool> OnUpdatePerfect = new UnityEvent<bool>();
+    public UnityEvent<bool> OnSetPerfectionistMode = new UnityEvent<bool>();
 
     private int currentLevel = -1;
 
@@ -56,6 +59,10 @@ public class GameManager : MonoBehaviour
     public UnityEvent<bool> OnAccessibilityUpdate = new UnityEvent<bool>();
     private bool accessibilytyMode = false;
 
+    private bool perfectionistMode = false;
+    public List<bool> levelsPerfect = new List<bool>();
+    private bool isPerfect = true;
+
     enum GameState
     {
         StartScreen,
@@ -70,6 +77,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         MusicInfoState.onBar.AddListener(StartBar);
+        levelsPerfect = levels.Select(x => false).ToList();
     }
 
     public void OnClick(InputAction.CallbackContext context)
@@ -107,6 +115,8 @@ public class GameManager : MonoBehaviour
         }
         else if (state == GameState.End)
         {
+            perfectionistMode = true;
+            OnSetPerfectionistMode.Invoke(true);
             InitLevel(0);
             transitionBar = 2;
             state = GameState.Playing;
@@ -128,6 +138,8 @@ public class GameManager : MonoBehaviour
         currentLevel = idx;
         UpdateProgress(keepProgress ? progress : 0);
         levelSuccessFul = false;
+        UpdatePerfect(true);
+        levelsPerfect[currentLevel] = false;
         nextBeatIdx = 0;
         UpdateNextBeatPosition();
         OnStartLevel.Invoke(levels[idx]);
@@ -149,9 +161,10 @@ public class GameManager : MonoBehaviour
             transitionBar -= 1;
         }
 
-        if (state == GameState.Playing && levelSuccessFul && !gameFinished)
+        if (state == GameState.Playing && levelSuccessFul)
         {
             state = GameState.EndLevel;
+            levelsPerfect[currentLevel] = isPerfect;
             transitionBar = 1;
             OnLevelEnd.Invoke();
         }
@@ -168,7 +181,14 @@ public class GameManager : MonoBehaviour
         if (!mistakes)
         {
             mistakes = true;
-            UpdateProgress(Math.Max(0, progress - (barEnded ? 2 : 1)));
+            if (!perfectionistMode)
+            {
+                UpdateProgress(Math.Max(0, progress - (barEnded ? 2 : 1)));
+                UpdatePerfect(progress > 0 ? false : true);
+            } else
+            {
+                UpdateProgress(0);
+            }
         }
     }
 
@@ -219,6 +239,12 @@ public class GameManager : MonoBehaviour
         OnUpdateProgress.Invoke(value);
     }
 
+    void UpdatePerfect(bool value)
+    {
+        isPerfect = value;
+        OnUpdatePerfect.Invoke(value);
+    }
+
     public void CreditsEnded()
     {
         state = GameState.End;
@@ -229,5 +255,12 @@ public class GameManager : MonoBehaviour
         if (context.phase != InputActionPhase.Performed) return;
         accessibilytyMode = !accessibilytyMode;
         OnAccessibilityUpdate.Invoke(accessibilytyMode);
+    }
+
+    public void OnTogglePerfectionnist(InputAction.CallbackContext context)
+    {
+        if (context.phase != InputActionPhase.Performed) return;
+        perfectionistMode = !perfectionistMode;
+        OnSetPerfectionistMode.Invoke(perfectionistMode);
     }
 }

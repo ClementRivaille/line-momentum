@@ -1563,6 +1563,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnUpdatePerfect:
+    m_PersistentCalls:
+      m_Calls: []
+  OnSetPerfectionnistMode:
+    m_PersistentCalls:
+      m_Calls: []
   progress: 0
   OnAccessibilityUpdate:
     m_PersistentCalls:
@@ -1591,6 +1597,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  levelsPerfect: 
 --- !u!114 &1199829016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1691,6 +1698,22 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_ActionId: 14a01877-0eb1-4c71-a713-78fbabcf73cc
+    m_ActionName: Player/New action
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1199829015}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: OnTogglePerfectionnist
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 0c7d4ed9-89d8-478f-a94e-4914ef34f734
     m_ActionName: Player/New action
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
