@@ -797,7 +797,7 @@ RectTransform:
   - {fileID: 1474218368}
   - {fileID: 631336874}
   m_Father: {fileID: 1291278768}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.08}
   m_AnchorMax: {x: 0.97, y: 0.92}
@@ -1788,8 +1788,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1413944286}
-  - {fileID: 546645872}
   - {fileID: 1510008792}
+  - {fileID: 546645872}
   m_Father: {fileID: 603773966}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2270,7 +2270,7 @@ GameObject:
   - component: {fileID: 1510008794}
   - component: {fileID: 1510008793}
   m_Layer: 0
-  m_Name: progress_bar (1)
+  m_Name: bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2289,7 +2289,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1291278768}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.45, y: 0.17}
   m_AnchorMax: {x: 0.55, y: 0.82}
@@ -2309,7 +2309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.59607846, g: 0.59607846, b: 0.59607846, a: 1}
+  m_Color: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2435,6 +2435,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backgroundColor: {r: 0.40392157, g: 0.40392157, b: 0.40392157, a: 1}
   lineColor: {r: 0.59607846, g: 0.59607846, b: 0.59607846, a: 1}
+  toggleSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 10f34b1627616414c8e0e5da34a8d782, type: 2}
+  untoggleSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 64aee26d914c64e43a06a7464262e81f, type: 2}
 --- !u!1001 &1632087661
 PrefabInstance:
   m_ObjectHideFlags: 0

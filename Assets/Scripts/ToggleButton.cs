@@ -28,6 +28,8 @@ public class ToggleButton : MonoBehaviour, IPointerDownHandler
 
     public UnityEvent<AK.Wwise.Switch> SetSwitchValue = new UnityEvent<AK.Wwise.Switch>();
 
+    public UnityAction<bool> OnToggle;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,10 +54,12 @@ public class ToggleButton : MonoBehaviour, IPointerDownHandler
         {
             toggled = !toggled;
             OnToggleValueChanged();
+            OnToggle.Invoke(toggled);
         } else if (mode == ToggleMode.Radio && !toggled)
         {
             toggled = true;
             OnToggleValueChanged();
+            OnToggle.Invoke(true);
 
             GameObject[] radios = GameObject.FindGameObjectsWithTag("radio");
             foreach (GameObject radio in radios)

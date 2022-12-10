@@ -4409,9 +4409,6 @@
 												<Property Name="MusicTrackType" Type="int16" Value="3"/>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="DefaultSwitchOrState">
-													<ObjectRef Name="on" ID="{85C98F78-834E-4A7F-AB88-FD9E0984B13D}" WorkUnitID="{8E7CFE52-42AD-47FC-B7D9-04CA67E4E5BE}"/>
-												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3624E84B-9D33-4911-957A-2BDEE1537685}"/>
 												</Reference>
@@ -4544,9 +4541,6 @@
 												<Property Name="MusicTrackType" Type="int16" Value="3"/>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="DefaultSwitchOrState">
-													<ObjectRef Name="on" ID="{BF709F33-33FB-4833-9C03-91792DFA99B6}" WorkUnitID="{8E7CFE52-42AD-47FC-B7D9-04CA67E4E5BE}"/>
-												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3624E84B-9D33-4911-957A-2BDEE1537685}"/>
 												</Reference>
@@ -5087,9 +5081,6 @@
 												<Property Name="MusicTrackType" Type="int16" Value="3"/>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="DefaultSwitchOrState">
-													<ObjectRef Name="on" ID="{80CF3079-07BD-41E6-AF3A-0C4A6DF58E55}" WorkUnitID="{8E7CFE52-42AD-47FC-B7D9-04CA67E4E5BE}"/>
-												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3624E84B-9D33-4911-957A-2BDEE1537685}"/>
 												</Reference>
