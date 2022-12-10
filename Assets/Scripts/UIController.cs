@@ -2,9 +2,11 @@ using DigitalRuby.Tween;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
@@ -26,6 +28,10 @@ public class UIController : MonoBehaviour
     public Text infoLog;
     private Color infoLogColor;
     private Coroutine logFade;
+
+    public Text ScoreCTA;
+    public HorizontalLayoutGroup ScoreBar;
+    public PerfectDiamond diamondPrefab;
 
     [Serializable]
     public class InstructionText
@@ -125,10 +131,12 @@ public class UIController : MonoBehaviour
         instruction.text.gameObject.SetActive(false);
     }
 
-    public void StartCredits()
+    public void StartCredits(List<bool> score)
     {
         creditsActive = true;
         creditsBar = 0;
+        updateScore(score);
+
         foreach (Transform creditSlide in Credits.transform)
         {
             creditSlide.gameObject.SetActive(false);
@@ -162,5 +170,31 @@ public class UIController : MonoBehaviour
         {
             logFade = null;
         });
+    }
+
+    void updateScore(List<bool> score)
+    {
+        // Empty children
+        foreach (Transform child in ScoreBar.transform)
+        {
+            GameObject.Destroy(child.gameObject);
+        }
+
+        // Create children
+        foreach (bool perfect in score)
+        {
+            PerfectDiamond diamond = Instantiate(diamondPrefab, ScoreBar.transform);
+            diamond.filled = perfect;
+            RectTransform diamondTransform = diamond.GetComponent<RectTransform>();
+            diamondTransform.sizeDelta = new Vector2(42f, diamondTransform.sizeDelta.y);
+        }
+
+        if (score.All(p => p))
+        {
+            ScoreCTA.text = "Congratulation! You unlocked\nStudio Mode\nClick to open it";
+        } else
+        {
+            ScoreCTA.text = "Click to play again on\nPerfectionnist Mode\nand unlock new content";
+        }
     }
 }

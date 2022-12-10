@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
     public UnityEvent<int> OnUpdateProgress = new UnityEvent<int>();
     public UnityEvent OnLevelEnd = new UnityEvent();
     public UnityEvent OnGameEnd = new UnityEvent();
-    public UnityEvent OnStartCredit = new UnityEvent();
+    public UnityEvent<List<bool>> OnStartCredit = new UnityEvent<List<bool>>();
     public UnityEvent<bool> OnUpdatePerfect = new UnityEvent<bool>();
     public UnityEvent<bool> OnSetPerfectionistMode = new UnityEvent<bool>();
 
@@ -104,11 +104,11 @@ public class GameManager : MonoBehaviour
                 FailBar();
                 OnFail.Invoke();
 
-                if (levelSuccessFul)
+                if (levelSuccessFul && !perfectionistMode)
                 {
                     UpdateProgress((int)ProgressNeeded - 2);
-                    levelSuccessFul = false;
                 }
+                levelSuccessFul = false;
             }
         }
         else if (state == GameState.EndLevel && transitionBar <= 0)
@@ -178,7 +178,7 @@ public class GameManager : MonoBehaviour
         {
             state = GameState.Credits;
             gameFinished = false;
-            OnStartCredit.Invoke();
+            OnStartCredit.Invoke(levelsPerfect);
         }
     }
 
