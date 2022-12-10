@@ -1,6 +1,7 @@
 using DigitalRuby.Tween;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.U2D.Sprites;
 using UnityEngine;
 
 public class LevelProgression : MonoBehaviour
@@ -12,7 +13,10 @@ public class LevelProgression : MonoBehaviour
     public Color InactiveColor;
     public Color ActiveColor;
 
+    public PerfectDiamond diamond;
+
     private int currentProgress;
+    private bool isPerfect = false;
 
     private List<SpriteRenderer> dots = new List<SpriteRenderer> ();
 
@@ -42,12 +46,22 @@ public class LevelProgression : MonoBehaviour
         } else
         {
             dots.ForEach(dot => dot.gameObject.SetActive(true));
+            diamond.gameObject.SetActive(true);
         }
     }
 
     public void UpdateProgress(int value)
     {
         currentProgress = value;
+    }
+
+    public void UpdatePerfect(bool value)
+    {
+        isPerfect = value;
+        if (!isPerfect)
+        {
+            diamond.SetHidden(true);
+        }
     }
 
     private void RefreshDots() {
@@ -68,6 +82,16 @@ public class LevelProgression : MonoBehaviour
                 });
             }
         }
+
+        if (currentProgress == 0)
+        {
+            diamond.SetFilled(false);
+            diamond.SetHidden(false);
+        }
+        else if (currentProgress == NbLoops && isPerfect)
+        {
+            diamond.SetFilled(true);
+        }
     }
 
     public void ClearDots()
@@ -76,5 +100,6 @@ public class LevelProgression : MonoBehaviour
             dot.color = InactiveColor;
             dot.gameObject.SetActive(false);
         });
+        diamond.gameObject.SetActive(false);
     }
 }

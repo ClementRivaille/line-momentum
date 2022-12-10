@@ -86,6 +86,12 @@ public class UIController : MonoBehaviour
         logFade = StartCoroutine(DisplayInfoLog());
     }
 
+    public void OnTogglePerfectionist(bool enabled)
+    {
+        infoLog.text = enabled ? "Perfectionism active" : "Perfectionism inactive";
+        logFade = StartCoroutine(DisplayInfoLog());
+    }
+
     private WaitForSeconds FadeScreen(CanvasGroup screen, float duration, bool fadeIn)
     {
         var tween = screen.gameObject.Tween("Fade screen", screen.alpha,

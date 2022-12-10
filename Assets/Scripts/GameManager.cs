@@ -47,6 +47,7 @@ public class GameManager : MonoBehaviour
 
     private int currentLevel = -1;
 
+    [HideInInspector]
     public int progress = 0;
     private int nextBeatIdx = -1;
     private float nextBeatPosition = 0.0f;
@@ -60,6 +61,7 @@ public class GameManager : MonoBehaviour
     private bool accessibilytyMode = false;
 
     private bool perfectionistMode = false;
+    [HideInInspector]
     public List<bool> levelsPerfect = new List<bool>();
     private bool isPerfect = true;
 
@@ -161,6 +163,10 @@ public class GameManager : MonoBehaviour
             transitionBar -= 1;
         }
 
+        if (state == GameState.Playing && progress == 0)
+        {
+            UpdatePerfect(true);
+        }
         if (state == GameState.Playing && levelSuccessFul)
         {
             state = GameState.EndLevel;
@@ -183,8 +189,8 @@ public class GameManager : MonoBehaviour
             mistakes = true;
             if (!perfectionistMode)
             {
-                UpdateProgress(Math.Max(0, progress - (barEnded ? 2 : 1)));
                 UpdatePerfect(progress > 0 ? false : true);
+                UpdateProgress(Math.Max(0, progress - (barEnded ? 2 : 1)));
             } else
             {
                 UpdateProgress(0);
