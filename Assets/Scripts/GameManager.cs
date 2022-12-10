@@ -7,6 +7,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public enum LevelId
 {
@@ -44,6 +45,7 @@ public class GameManager : MonoBehaviour
     public UnityEvent<List<bool>> OnStartCredit = new UnityEvent<List<bool>>();
     public UnityEvent<bool> OnUpdatePerfect = new UnityEvent<bool>();
     public UnityEvent<bool> OnSetPerfectionistMode = new UnityEvent<bool>();
+    public UnityEvent OnLoadStudioMode = new UnityEvent();
 
     private int currentLevel = -1;
 
@@ -117,12 +119,20 @@ public class GameManager : MonoBehaviour
         }
         else if (state == GameState.End)
         {
-            perfectionistMode = true;
-            OnSetPerfectionistMode.Invoke(true);
-            InitLevel(0);
-            transitionBar = 2;
-            state = GameState.Playing;
-            OnStartGame.Invoke();
+            if (levelsPerfect.All(v => v))
+            {
+                OnLoadStudioMode.Invoke();
+                SceneManager.LoadScene("Studio", LoadSceneMode.Single);
+            }
+            else
+            {
+                perfectionistMode = true;
+                OnSetPerfectionistMode.Invoke(true);
+                InitLevel(0);
+                transitionBar = 2;
+                state = GameState.Playing;
+                OnStartGame.Invoke();
+            }
         }
     }
 

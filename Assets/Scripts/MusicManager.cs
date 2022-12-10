@@ -82,4 +82,10 @@ public class MusicManager : MonoBehaviour
     {
         EndSong.SetValue();
     }
+
+    public void Stop()
+    {
+        StartEvent.Stop(gameObject);
+        SuccessEvent.Post(gameObject);
+    }
 }
