@@ -24,8 +24,11 @@ public class ProgressBar : MonoBehaviour
 
     private bool displayPosition = true;
     private float dotLightIntensity;
-    public int DotDisappearanceThreshold = 5;
+    private int dotDisappearanceThreshold = 5;
     private Light2D dotLight;
+
+    public int DefaultThreshold = 5;
+    public int HardThreshold = 2;
 
     private bool accessibilityDisplay = false;
 
@@ -34,6 +37,7 @@ public class ProgressBar : MonoBehaviour
         dotLight = CurrentPositionDot.GetComponent<Light2D>();
         dotLightIntensity = dotLight.intensity;
         zPosition = transform.localPosition.z;
+        dotDisappearanceThreshold = DefaultThreshold;
 
         MusicInfoState.onMusicStarted.AddListener(OnMusicStart);
         CurrentPositionDot.gameObject.SetActive(false);
@@ -151,7 +155,7 @@ public class ProgressBar : MonoBehaviour
 
     public void ProgressUpdate(int progress)
     {
-        displayPosition = (progress < DotDisappearanceThreshold) || accessibilityDisplay;
+        displayPosition = (progress < dotDisappearanceThreshold) || accessibilityDisplay;
     }
 
     public void ExitLevel()
@@ -164,6 +168,11 @@ public class ProgressBar : MonoBehaviour
     public void ToggleAccessibility(bool accessibility)
     {
         accessibilityDisplay = accessibility;
+    }
+
+    public void TogglePerfectionism(bool perfetionist)
+    {
+        dotDisappearanceThreshold = perfetionist ? HardThreshold : DefaultThreshold;
     }
 
     IEnumerator WaitAndHide()

@@ -1773,6 +1773,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1297098296}
+        m_TargetAssemblyTypeName: ProgressBar, Assembly-CSharp
+        m_MethodName: TogglePerfectionism
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   progress: 0
   OnAccessibilityUpdate:
     m_PersistentCalls:
@@ -2079,7 +2091,8 @@ MonoBehaviour:
   CrossPrefab: {fileID: 113277438801644771, guid: 1ae442732792b4e4c8898ae81083278e, type: 3}
   sprite: {fileID: 1209251169}
   zPosition: 0
-  DotDisappearanceThreshold: 5
+  DefaultThreshold: 5
+  HardThreshold: 2
 --- !u!1 &1361926627
 GameObject:
   m_ObjectHideFlags: 0
