@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID COMPLETE_LEVEL = 1013251259U;
         static const AkUniqueID PLAY_FAIL = 2628159538U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
+        static const AkUniqueID PLAY_STUDIO = 408356204U;
         static const AkUniqueID PLAY_SUCCESS = 3943614907U;
     } // namespace EVENTS
 
@@ -40,6 +41,50 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace CELLIS
+        {
+            static const AkUniqueID GROUP = 667259949U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace SWITCH
+        } // namespace CELLIS
+
+        namespace CELLO_PIZZICATO
+        {
+            static const AkUniqueID GROUP = 3571138524U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace SWITCH
+        } // namespace CELLO_PIZZICATO
+
+        namespace CHARANGO
+        {
+            static const AkUniqueID GROUP = 2302454438U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace SWITCH
+        } // namespace CHARANGO
+
+        namespace GUITAR
+        {
+            static const AkUniqueID GROUP = 3232836819U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace SWITCH
+        } // namespace GUITAR
+
         namespace LEVEL1LAYERS
         {
             static const AkUniqueID GROUP = 3915065012U;
@@ -100,6 +145,61 @@ namespace AK
                 static const AkUniqueID LAYER7 = 3298531303U;
             } // namespace SWITCH
         } // namespace LEVEL4LAYERS
+
+        namespace MARIMBA
+        {
+            static const AkUniqueID GROUP = 3091781674U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace SWITCH
+        } // namespace MARIMBA
+
+        namespace PIANO
+        {
+            static const AkUniqueID GROUP = 1324340420U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace SWITCH
+        } // namespace PIANO
+
+        namespace PIZZICATO
+        {
+            static const AkUniqueID GROUP = 2077337834U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace SWITCH
+        } // namespace PIZZICATO
+
+        namespace VIBRAPHONE
+        {
+            static const AkUniqueID GROUP = 902298169U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace SWITCH
+        } // namespace VIBRAPHONE
+
+        namespace WINDS
+        {
+            static const AkUniqueID GROUP = 742231802U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace SWITCH
+        } // namespace WINDS
 
     } // namespace SWITCHES
 

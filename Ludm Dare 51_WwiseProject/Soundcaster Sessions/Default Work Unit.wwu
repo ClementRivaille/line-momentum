@@ -25,16 +25,56 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Progress" ID="{AA06989B-CDFD-47A0-98BE-7ECB9BBCD57E}"/>
-							<Value>10</Value>
+							<Value>8.9</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Level1" ID="{73C27F1F-0C70-459C-A800-E658C1B7CFA2}"/>
+						<CurrentStateRef Name="Level3" ID="{4C1A517D-017D-40E7-8376-94873BE63C6F}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="off" ID="{E567A915-C6B5-416A-8C9A-F113F0AEC06E}"/>
 						<CurrentSwitchRef Name="Layer1" ID="{B6790B7E-9510-4325-A5EF-66166E086C95}"/>
+						<CurrentSwitchRef Name="off" ID="{16E96C65-5D72-4E22-B0D0-D20C5FDDD738}"/>
+						<CurrentSwitchRef Name="off" ID="{ADEC1197-03B0-4685-A44A-E3447E4863E1}"/>
 						<CurrentSwitchRef Name="Layer1" ID="{507578D1-648F-46AB-9A3B-D006B2504597}"/>
+						<CurrentSwitchRef Name="off" ID="{6B461203-A96E-4790-B033-50A9090D5FF4}"/>
+						<CurrentSwitchRef Name="off" ID="{F6F53693-704A-4BDA-8040-15D261201C09}"/>
 						<CurrentSwitchRef Name="Layer1" ID="{EBB44925-0017-4DDA-B8A0-5957598982D5}"/>
+						<CurrentSwitchRef Name="off" ID="{93F59EA3-68CD-49C9-952F-144B680421EF}"/>
+						<CurrentSwitchRef Name="off" ID="{8B783138-44FD-44A0-926B-CA4DE61E6B19}"/>
+						<CurrentSwitchRef Name="off" ID="{F8B62B5A-15C3-48D6-A680-7BA7716AF32A}"/>
+						<CurrentSwitchRef Name="Layer1" ID="{4E69CE1C-3772-42F6-B147-370491F70E1F}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Studio" ID="{DD74DD20-9BC2-4EDD-ABFB-6E5FC3B16AED}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Studio" ID="{D022B5C1-487D-4306-A5D7-86DD851A536B}" WorkUnitID="{15034F94-5602-4BA5-8097-982FD704F12A}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Progress" ID="{AA06989B-CDFD-47A0-98BE-7ECB9BBCD57E}"/>
+							<Value>8.9</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Level4" ID="{3D13F315-A66E-400A-BFC8-7C003BFF80BB}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="on" ID="{115A0DE6-8F99-465C-9602-B69AADF8EFBD}"/>
+						<CurrentSwitchRef Name="Layer1" ID="{B6790B7E-9510-4325-A5EF-66166E086C95}"/>
+						<CurrentSwitchRef Name="on" ID="{9B36E3D6-CE0E-4620-A155-EE6383472521}"/>
+						<CurrentSwitchRef Name="on" ID="{85C98F78-834E-4A7F-AB88-FD9E0984B13D}"/>
+						<CurrentSwitchRef Name="Layer1" ID="{507578D1-648F-46AB-9A3B-D006B2504597}"/>
+						<CurrentSwitchRef Name="on" ID="{AAAEAD57-2115-4FCE-B1F6-8F34A7B2C356}"/>
+						<CurrentSwitchRef Name="on" ID="{3DE941B1-2BDA-436F-8FCC-1CD6067DE53A}"/>
+						<CurrentSwitchRef Name="Layer1" ID="{EBB44925-0017-4DDA-B8A0-5957598982D5}"/>
+						<CurrentSwitchRef Name="on" ID="{BF709F33-33FB-4833-9C03-91792DFA99B6}"/>
+						<CurrentSwitchRef Name="off" ID="{8B783138-44FD-44A0-926B-CA4DE61E6B19}"/>
+						<CurrentSwitchRef Name="on" ID="{3FD60848-CFEA-4034-8D1B-254374AC78C4}"/>
+						<CurrentSwitchRef Name="on" ID="{80CF3079-07BD-41E6-AF3A-0C4A6DF58E55}"/>
 						<CurrentSwitchRef Name="Layer1" ID="{4E69CE1C-3772-42F6-B147-370491F70E1F}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

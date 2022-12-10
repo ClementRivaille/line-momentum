@@ -226,6 +226,64 @@
 						</Curve>
 					</SwitchOnRTPC>
 				</SwitchGroup>
+				<Folder Name="Studio" ID="{BB0C645D-8273-48CA-9041-3FE2120E4A06}" ShortID="776743927">
+					<ChildrenList>
+						<SwitchGroup Name="Charango" ID="{E5C3F8A2-2D3D-4128-8D41-EB6523200A57}">
+							<ChildrenList>
+								<Switch Name="on" ID="{115A0DE6-8F99-465C-9602-B69AADF8EFBD}"/>
+								<Switch Name="off" ID="{E567A915-C6B5-416A-8C9A-F113F0AEC06E}"/>
+							</ChildrenList>
+						</SwitchGroup>
+						<SwitchGroup Name="Guitar" ID="{29A9109F-1A0A-433E-999C-EE24E798EFC6}">
+							<ChildrenList>
+								<Switch Name="on" ID="{85C98F78-834E-4A7F-AB88-FD9E0984B13D}"/>
+								<Switch Name="off" ID="{ADEC1197-03B0-4685-A44A-E3447E4863E1}"/>
+							</ChildrenList>
+						</SwitchGroup>
+						<SwitchGroup Name="Marimba" ID="{85166006-7855-4DE9-9DEA-068F9CA7804B}">
+							<ChildrenList>
+								<Switch Name="on" ID="{3FD60848-CFEA-4034-8D1B-254374AC78C4}"/>
+								<Switch Name="off" ID="{F8B62B5A-15C3-48D6-A680-7BA7716AF32A}"/>
+							</ChildrenList>
+						</SwitchGroup>
+						<SwitchGroup Name="Piano" ID="{81E38E91-F6D5-4CC9-8A5F-380A973B87E8}">
+							<ChildrenList>
+								<Switch Name="on" ID="{BF709F33-33FB-4833-9C03-91792DFA99B6}"/>
+								<Switch Name="off" ID="{93F59EA3-68CD-49C9-952F-144B680421EF}"/>
+							</ChildrenList>
+						</SwitchGroup>
+						<SwitchGroup Name="Vibraphone" ID="{CB98D0AD-C6F4-4E45-80E3-670B6FFF5073}">
+							<ChildrenList>
+								<Switch Name="on" ID="{80CF3079-07BD-41E6-AF3A-0C4A6DF58E55}"/>
+								<Switch Name="off" ID="{90A22628-517B-46EB-9787-CDD2E21F7F69}"/>
+							</ChildrenList>
+						</SwitchGroup>
+						<SwitchGroup Name="Cellis" ID="{E031FA84-0BE6-4DE3-9A3C-3A763910E39A}">
+							<ChildrenList>
+								<Switch Name="on" ID="{33B537C5-F7BF-4BB2-A486-493787C05135}"/>
+								<Switch Name="off" ID="{8B783138-44FD-44A0-926B-CA4DE61E6B19}"/>
+							</ChildrenList>
+						</SwitchGroup>
+						<SwitchGroup Name="Cello_Pizzicato" ID="{D1BBD96D-EC82-4270-96AB-F01B8E052A5F}">
+							<ChildrenList>
+								<Switch Name="on" ID="{9B36E3D6-CE0E-4620-A155-EE6383472521}"/>
+								<Switch Name="off" ID="{16E96C65-5D72-4E22-B0D0-D20C5FDDD738}"/>
+							</ChildrenList>
+						</SwitchGroup>
+						<SwitchGroup Name="Pizzicato" ID="{A7946276-7354-46F0-87FD-FCFFDE49A96B}">
+							<ChildrenList>
+								<Switch Name="on" ID="{AAAEAD57-2115-4FCE-B1F6-8F34A7B2C356}"/>
+								<Switch Name="off" ID="{6B461203-A96E-4790-B033-50A9090D5FF4}"/>
+							</ChildrenList>
+						</SwitchGroup>
+						<SwitchGroup Name="Winds" ID="{473E0E44-4CED-49E6-9147-89BB0DEC6F23}">
+							<ChildrenList>
+								<Switch Name="on" ID="{3DE941B1-2BDA-436F-8FCC-1CD6067DE53A}"/>
+								<Switch Name="off" ID="{F6F53693-704A-4BDA-8040-15D261201C09}"/>
+							</ChildrenList>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

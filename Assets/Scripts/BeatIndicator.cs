@@ -24,18 +24,19 @@ public class BeatIndicator : MonoBehaviour
 
     private void Start()
     {
-        animationManager = GetComponent<Animation>();
+        GetAnimator();
     }
 
     public void Validate()
     {
-        
+        GetAnimator();
         animationManager.Play("ValidateBeat");
         status = BeatStatus.Complete;
     }
 
     public void Fail()
     {
+        GetAnimator();
         status = BeatStatus.Failed;
         animationManager.Play("MissBeat");
     }
@@ -50,6 +51,13 @@ public class BeatIndicator : MonoBehaviour
             animationManager.Play("ResetMissBeat");
         }
         status = BeatStatus.Pending;
+    }
+
+    void GetAnimator() {
+        if (!animationManager)
+        {
+            animationManager = GetComponent<Animation>();
+        }
     }
 
 

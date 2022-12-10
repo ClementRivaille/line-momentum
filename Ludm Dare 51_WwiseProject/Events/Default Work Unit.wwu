@@ -78,6 +78,37 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Studio" ID="{D022B5C1-487D-4306-A5D7-86DD851A536B}">
+					<ChildrenList>
+						<Action Name="" ID="{D4D08D15-034D-4500-B129-B48B43F44448}" ShortID="187544034">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{CB7313A0-0869-41A2-929C-8739520D3CCF}" WorkUnitID="{A7EF2D2C-2E51-42C2-BAFC-7D2D7889F94A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0D91D462-3268-4424-815C-42354EA90968}" ShortID="1005997535">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Level1" ID="{73C27F1F-0C70-459C-A800-E658C1B7CFA2}" WorkUnitID="{36F0BF19-CB7B-42E3-8579-4DB8C92CC0E9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A3236D71-ABDE-4DC9-916E-C6C581BA3298}" ShortID="823212363">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Studio" ID="{B3B4581E-DF14-41E3-8CEC-F70AF6D7292D}" WorkUnitID="{A7EF2D2C-2E51-42C2-BAFC-7D2D7889F94A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

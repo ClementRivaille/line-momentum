@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: a49d86c57f61d44480b92270e8d844ae
     GuidInternal: 
-    m_lastTime: -8585351558520389015
+    m_lastTime: -8585309196946260809
     List:
     - name: Music_SoundBank
       guid: 821cc0cb284a5b468eb5a26617b76939
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 944f03150256a54b8097982fd704f12a
     GuidInternal: 
-    m_lastTime: -8585351557451680347
+    m_lastTime: -8585309205641175105
     List:
     - name: Complete_Level
       guid: e118b13fbc02444aa8bed2c80a348908
@@ -144,6 +144,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 60091b4339c1d74fa738fecff3d15108
       Path: Events\Default Work Unit\Play_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Studio
+      guid: c1b522d07d480643a5d786dd851a536b
+      id: 408356204
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 944f03150256a54b8097982fd704f12a
+      - ElementName: Play_Studio
+        ObjectType: 3
+        guid: c1b522d07d480643a5d786dd851a536b
+      Path: Events\Default Work Unit\Play_Studio
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -332,8 +349,244 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 52fe7c8ead42fc47b7d904ca67e4e5be
     GuidInternal: 
-    m_lastTime: -8585351640722369600
+    m_lastTime: -8585309211601934632
     List:
+    - name: Cellis
+      guid: 84fa31e0e60be34d9a3c3a763910e39a
+      id: 667259949
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+      - ElementName: Studio
+        ObjectType: 4
+        guid: 5d640cbb7382ca4890413fe2120e4a06
+      - ElementName: Cellis
+        ObjectType: 11
+        guid: 84fa31e0e60be34d9a3c3a763910e39a
+      Path: Switches\Default Work Unit\Studio\Cellis
+      values:
+      - name: off
+        guid: 3831788bfd44a044926bca4de61e6b19
+        id: 930712164
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Studio
+          ObjectType: 4
+          guid: 5d640cbb7382ca4890413fe2120e4a06
+        - ElementName: Cellis
+          ObjectType: 11
+          guid: 84fa31e0e60be34d9a3c3a763910e39a
+        - ElementName: off
+          ObjectType: 10
+          guid: 3831788bfd44a044926bca4de61e6b19
+      - name: on
+        guid: c537b533bff7b24ba486493787c05135
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Studio
+          ObjectType: 4
+          guid: 5d640cbb7382ca4890413fe2120e4a06
+        - ElementName: Cellis
+          ObjectType: 11
+          guid: 84fa31e0e60be34d9a3c3a763910e39a
+        - ElementName: on
+          ObjectType: 10
+          guid: c537b533bff7b24ba486493787c05135
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Cello_Pizzicato
+      guid: 6dd9bbd182ec704296abf01b8e052a5f
+      id: 3571138524
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+      - ElementName: Studio
+        ObjectType: 4
+        guid: 5d640cbb7382ca4890413fe2120e4a06
+      - ElementName: Cello_Pizzicato
+        ObjectType: 11
+        guid: 6dd9bbd182ec704296abf01b8e052a5f
+      Path: Switches\Default Work Unit\Studio\Cello_Pizzicato
+      values:
+      - name: off
+        guid: 656ce916725d224eb0d0d20c5fddd738
+        id: 930712164
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Studio
+          ObjectType: 4
+          guid: 5d640cbb7382ca4890413fe2120e4a06
+        - ElementName: Cello_Pizzicato
+          ObjectType: 11
+          guid: 6dd9bbd182ec704296abf01b8e052a5f
+        - ElementName: off
+          ObjectType: 10
+          guid: 656ce916725d224eb0d0d20c5fddd738
+      - name: on
+        guid: d6e3369b0ece2046a155ee6383472521
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Studio
+          ObjectType: 4
+          guid: 5d640cbb7382ca4890413fe2120e4a06
+        - ElementName: Cello_Pizzicato
+          ObjectType: 11
+          guid: 6dd9bbd182ec704296abf01b8e052a5f
+        - ElementName: on
+          ObjectType: 10
+          guid: d6e3369b0ece2046a155ee6383472521
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Charango
+      guid: a2f8c3e53d2d28418d41eb6523200a57
+      id: 2302454438
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+      - ElementName: Studio
+        ObjectType: 4
+        guid: 5d640cbb7382ca4890413fe2120e4a06
+      - ElementName: Charango
+        ObjectType: 11
+        guid: a2f8c3e53d2d28418d41eb6523200a57
+      Path: Switches\Default Work Unit\Studio\Charango
+      values:
+      - name: off
+        guid: 15a967e5b5c66a418c9af113f0aec06e
+        id: 930712164
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Studio
+          ObjectType: 4
+          guid: 5d640cbb7382ca4890413fe2120e4a06
+        - ElementName: Charango
+          ObjectType: 11
+          guid: a2f8c3e53d2d28418d41eb6523200a57
+        - ElementName: off
+          ObjectType: 10
+          guid: 15a967e5b5c66a418c9af113f0aec06e
+      - name: on
+        guid: e60d5a11998f5c469602b69aadf8efbd
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Studio
+          ObjectType: 4
+          guid: 5d640cbb7382ca4890413fe2120e4a06
+        - ElementName: Charango
+          ObjectType: 11
+          guid: a2f8c3e53d2d28418d41eb6523200a57
+        - ElementName: on
+          ObjectType: 10
+          guid: e60d5a11998f5c469602b69aadf8efbd
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Guitar
+      guid: 9f10a9290a1a3e43999cee24e798efc6
+      id: 3232836819
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+      - ElementName: Studio
+        ObjectType: 4
+        guid: 5d640cbb7382ca4890413fe2120e4a06
+      - ElementName: Guitar
+        ObjectType: 11
+        guid: 9f10a9290a1a3e43999cee24e798efc6
+      Path: Switches\Default Work Unit\Studio\Guitar
+      values:
+      - name: off
+        guid: 9711ecadb0038546a44ae3447e4863e1
+        id: 930712164
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Studio
+          ObjectType: 4
+          guid: 5d640cbb7382ca4890413fe2120e4a06
+        - ElementName: Guitar
+          ObjectType: 11
+          guid: 9f10a9290a1a3e43999cee24e798efc6
+        - ElementName: off
+          ObjectType: 10
+          guid: 9711ecadb0038546a44ae3447e4863e1
+      - name: on
+        guid: 788fc9854e837f4aab88fd9e0984b13d
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Studio
+          ObjectType: 4
+          guid: 5d640cbb7382ca4890413fe2120e4a06
+        - ElementName: Guitar
+          ObjectType: 11
+          guid: 9f10a9290a1a3e43999cee24e798efc6
+        - ElementName: on
+          ObjectType: 10
+          guid: 788fc9854e837f4aab88fd9e0984b13d
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: Level1Layers
       guid: e683579939ff7346949722ed6f21a810
       id: 3915065012
@@ -806,6 +1059,319 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: Marimba
+      guid: 066016855578e94d9dea068f9ca7804b
+      id: 3091781674
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+      - ElementName: Studio
+        ObjectType: 4
+        guid: 5d640cbb7382ca4890413fe2120e4a06
+      - ElementName: Marimba
+        ObjectType: 11
+        guid: 066016855578e94d9dea068f9ca7804b
+      Path: Switches\Default Work Unit\Studio\Marimba
+      values:
+      - name: off
+        guid: 5a2bb6f8c315d648a6807ba7716af32a
+        id: 930712164
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Studio
+          ObjectType: 4
+          guid: 5d640cbb7382ca4890413fe2120e4a06
+        - ElementName: Marimba
+          ObjectType: 11
+          guid: 066016855578e94d9dea068f9ca7804b
+        - ElementName: off
+          ObjectType: 10
+          guid: 5a2bb6f8c315d648a6807ba7716af32a
+      - name: on
+        guid: 4808d63feacf34408d1b254374ac78c4
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Studio
+          ObjectType: 4
+          guid: 5d640cbb7382ca4890413fe2120e4a06
+        - ElementName: Marimba
+          ObjectType: 11
+          guid: 066016855578e94d9dea068f9ca7804b
+        - ElementName: on
+          ObjectType: 10
+          guid: 4808d63feacf34408d1b254374ac78c4
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Piano
+      guid: 918ee381d5f6c94c8a5f380a973b87e8
+      id: 1324340420
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+      - ElementName: Studio
+        ObjectType: 4
+        guid: 5d640cbb7382ca4890413fe2120e4a06
+      - ElementName: Piano
+        ObjectType: 11
+        guid: 918ee381d5f6c94c8a5f380a973b87e8
+      Path: Switches\Default Work Unit\Studio\Piano
+      values:
+      - name: off
+        guid: a39ef593cd68c949952f144b680421ef
+        id: 930712164
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Studio
+          ObjectType: 4
+          guid: 5d640cbb7382ca4890413fe2120e4a06
+        - ElementName: Piano
+          ObjectType: 11
+          guid: 918ee381d5f6c94c8a5f380a973b87e8
+        - ElementName: off
+          ObjectType: 10
+          guid: a39ef593cd68c949952f144b680421ef
+      - name: on
+        guid: 339f70bffb3333489c0391792dfa99b6
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Studio
+          ObjectType: 4
+          guid: 5d640cbb7382ca4890413fe2120e4a06
+        - ElementName: Piano
+          ObjectType: 11
+          guid: 918ee381d5f6c94c8a5f380a973b87e8
+        - ElementName: on
+          ObjectType: 10
+          guid: 339f70bffb3333489c0391792dfa99b6
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Pizzicato
+      guid: 766294a75473f04687fdfcffde49a96b
+      id: 2077337834
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+      - ElementName: Studio
+        ObjectType: 4
+        guid: 5d640cbb7382ca4890413fe2120e4a06
+      - ElementName: Pizzicato
+        ObjectType: 11
+        guid: 766294a75473f04687fdfcffde49a96b
+      Path: Switches\Default Work Unit\Studio\Pizzicato
+      values:
+      - name: off
+        guid: 0312466b6ea99047b03350a9090d5ff4
+        id: 930712164
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Studio
+          ObjectType: 4
+          guid: 5d640cbb7382ca4890413fe2120e4a06
+        - ElementName: Pizzicato
+          ObjectType: 11
+          guid: 766294a75473f04687fdfcffde49a96b
+        - ElementName: off
+          ObjectType: 10
+          guid: 0312466b6ea99047b03350a9090d5ff4
+      - name: on
+        guid: 57adaeaa1521ce4fb1f68f34a7b2c356
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Studio
+          ObjectType: 4
+          guid: 5d640cbb7382ca4890413fe2120e4a06
+        - ElementName: Pizzicato
+          ObjectType: 11
+          guid: 766294a75473f04687fdfcffde49a96b
+        - ElementName: on
+          ObjectType: 10
+          guid: 57adaeaa1521ce4fb1f68f34a7b2c356
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Studio
+      guid: 5d640cbb7382ca4890413fe2120e4a06
+      id: 284677783
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+      - ElementName: Studio
+        ObjectType: 4
+        guid: 5d640cbb7382ca4890413fe2120e4a06
+      Path: Switches\Default Work Unit\Studio
+      values: []
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Vibraphone
+      guid: add098cbf4c6454e80e3670b6fff5073
+      id: 902298169
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+      - ElementName: Studio
+        ObjectType: 4
+        guid: 5d640cbb7382ca4890413fe2120e4a06
+      - ElementName: Vibraphone
+        ObjectType: 11
+        guid: add098cbf4c6454e80e3670b6fff5073
+      Path: Switches\Default Work Unit\Studio\Vibraphone
+      values:
+      - name: off
+        guid: 2826a2907b51eb469787cdd2e21f7f69
+        id: 930712164
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Studio
+          ObjectType: 4
+          guid: 5d640cbb7382ca4890413fe2120e4a06
+        - ElementName: Vibraphone
+          ObjectType: 11
+          guid: add098cbf4c6454e80e3670b6fff5073
+        - ElementName: off
+          ObjectType: 10
+          guid: 2826a2907b51eb469787cdd2e21f7f69
+      - name: on
+        guid: 7930cf80bd07e641af3a0c4a6df58e55
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Studio
+          ObjectType: 4
+          guid: 5d640cbb7382ca4890413fe2120e4a06
+        - ElementName: Vibraphone
+          ObjectType: 11
+          guid: add098cbf4c6454e80e3670b6fff5073
+        - ElementName: on
+          ObjectType: 10
+          guid: 7930cf80bd07e641af3a0c4a6df58e55
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Winds
+      guid: 440e3e47ed4ce649914789bb0dec6f23
+      id: 742231802
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+      - ElementName: Studio
+        ObjectType: 4
+        guid: 5d640cbb7382ca4890413fe2120e4a06
+      - ElementName: Winds
+        ObjectType: 11
+        guid: 440e3e47ed4ce649914789bb0dec6f23
+      Path: Switches\Default Work Unit\Studio\Winds
+      values:
+      - name: off
+        guid: 9336f5f64a70da4b804015d261201c09
+        id: 930712164
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Studio
+          ObjectType: 4
+          guid: 5d640cbb7382ca4890413fe2120e4a06
+        - ElementName: Winds
+          ObjectType: 11
+          guid: 440e3e47ed4ce649914789bb0dec6f23
+        - ElementName: off
+          ObjectType: 10
+          guid: 9336f5f64a70da4b804015d261201c09
+      - name: on
+        guid: b141e93dda2b6f438fcc1cd6067de53a
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 52fe7c8ead42fc47b7d904ca67e4e5be
+        - ElementName: Studio
+          ObjectType: 4
+          guid: 5d640cbb7382ca4890413fe2120e4a06
+        - ElementName: Winds
+          ObjectType: 11
+          guid: 440e3e47ed4ce649914789bb0dec6f23
+        - ElementName: on
+          ObjectType: 10
+          guid: b141e93dda2b6f438fcc1cd6067de53a
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -821,7 +1387,7 @@ MonoBehaviour:
     m_lastTime: -8585351558114883533
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000050000000600000008000000090000000a0000000b0000000c0000000e0000000f00000014000000150000001800000019000000
+  ExpandedWaapiItemIds: 01000000050000000600000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001200000013000000140000001500000018000000190000004200000045000000480000004a0000004b0000004d0000004e00000051000000570000005a000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

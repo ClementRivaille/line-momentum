@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a3a835c5afe06941b1d5783fa347696, type: 3}
+  m_Name: E5C3F8A2-2D3D-4128-8D41-EB6523200A57
+  m_EditorClassIdentifier: 
+  objectName: Charango
+  id: 2302454438
+  guid: E5C3F8A2-2D3D-4128-8D41-EB6523200A57
