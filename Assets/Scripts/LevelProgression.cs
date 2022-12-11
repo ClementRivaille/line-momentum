@@ -1,7 +1,5 @@
 using DigitalRuby.Tween;
-using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.U2D.Sprites;
 using UnityEngine;
 
 public class LevelProgression : MonoBehaviour
