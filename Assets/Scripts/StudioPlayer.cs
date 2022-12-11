@@ -14,7 +14,6 @@ public class StudioPlayer : MonoBehaviour
 
     void Start()
     {
-        Cursor.visible = true;
         var buttons = GameObject.FindGameObjectsWithTag("button").ToArray().Concat(GameObject.FindGameObjectsWithTag("radio").ToArray());
         foreach (var button in buttons)
         {

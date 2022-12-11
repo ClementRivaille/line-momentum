@@ -5,10 +5,12 @@ using UnityEngine.InputSystem;
 
 public class WindowManager : MonoBehaviour
 {
+
+    public bool CursorVisible = false;
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.visible = false;
+        Cursor.visible = CursorVisible;
     }
 
     public void ToggleFullScreen(InputAction.CallbackContext context)
