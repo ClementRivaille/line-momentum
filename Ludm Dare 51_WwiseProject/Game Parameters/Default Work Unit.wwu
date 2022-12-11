@@ -9,6 +9,15 @@
 						<Property Name="Max" Type="Real64" Value="10"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="Speed" ID="{520991B7-C950-48E7-806A-4346547600B4}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="0.6"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="0.6"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="2"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

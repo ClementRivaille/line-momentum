@@ -25,6 +25,10 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Progress" ID="{AA06989B-CDFD-47A0-98BE-7ECB9BBCD57E}"/>
+							<Value>10</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Speed" ID="{520991B7-C950-48E7-806A-4346547600B4}"/>
 							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
@@ -63,17 +67,17 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Level5" ID="{D290395A-F0D5-41FE-8A58-AFAE17834985}"/>
+						<CurrentStateRef Name="Level1" ID="{73C27F1F-0C70-459C-A800-E658C1B7CFA2}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="off" ID="{E567A915-C6B5-416A-8C9A-F113F0AEC06E}"/>
 						<CurrentSwitchRef Name="Layer1" ID="{B6790B7E-9510-4325-A5EF-66166E086C95}"/>
-						<CurrentSwitchRef Name="on" ID="{9B36E3D6-CE0E-4620-A155-EE6383472521}"/>
+						<CurrentSwitchRef Name="off" ID="{16E96C65-5D72-4E22-B0D0-D20C5FDDD738}"/>
 						<CurrentSwitchRef Name="off" ID="{ADEC1197-03B0-4685-A44A-E3447E4863E1}"/>
 						<CurrentSwitchRef Name="Layer1" ID="{A91F0988-8340-4C6B-A464-F4DD6947D323}"/>
 						<CurrentSwitchRef Name="Layer1" ID="{507578D1-648F-46AB-9A3B-D006B2504597}"/>
 						<CurrentSwitchRef Name="off" ID="{6B461203-A96E-4790-B033-50A9090D5FF4}"/>
-						<CurrentSwitchRef Name="on" ID="{3DE941B1-2BDA-436F-8FCC-1CD6067DE53A}"/>
+						<CurrentSwitchRef Name="off" ID="{F6F53693-704A-4BDA-8040-15D261201C09}"/>
 						<CurrentSwitchRef Name="Layer1" ID="{EBB44925-0017-4DDA-B8A0-5957598982D5}"/>
 						<CurrentSwitchRef Name="off" ID="{93F59EA3-68CD-49C9-952F-144B680421EF}"/>
 						<CurrentSwitchRef Name="Layer1" ID="{D197E3F0-B7A6-4E79-BC40-942238777342}"/>

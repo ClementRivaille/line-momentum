@@ -33,7 +33,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Accessibility",
+                    "name": "Display",
                     "type": "Button",
                     "id": "14a01877-0eb1-4c71-a713-78fbabcf73cc",
                     "expectedControlType": "Button",
@@ -45,6 +45,15 @@
                     "name": "Perfectionnist",
                     "type": "Button",
                     "id": "0c7d4ed9-89d8-478f-a94e-4914ef34f734",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Speed",
+                    "type": "Button",
+                    "id": "b0abb3f4-e0a0-48c9-a579-41aecf489866",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -253,11 +262,11 @@
                 {
                     "name": "",
                     "id": "5654584a-0a3d-452b-93c5-96fc784d3427",
-                    "path": "<Keyboard>/#(A)",
+                    "path": "<Keyboard>/#(D)",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse;Gamepad;Touch;Joystick;XR",
-                    "action": "Accessibility",
+                    "action": "Display",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -269,6 +278,17 @@
                     "processors": "",
                     "groups": "Keyboard&Mouse;Gamepad;Touch;Joystick;XR",
                     "action": "Perfectionnist",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c4266ac0-92d9-4e12-8d9a-619ef2808025",
+                    "path": "<Keyboard>/#(S)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse;Gamepad;Touch;Joystick;XR",
+                    "action": "Speed",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -100,3 +100,4 @@ $RECYCLE.BIN/
 *WwiseProject/**/*.akd
 *WwiseProject/**/.validationcache
 *WwiseProject/**/*.wem
+*WwiseProject/*.prof

@@ -241,6 +241,7 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID PROGRESS = 308635872U;
+        static const AkUniqueID SPEED = 640949982U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

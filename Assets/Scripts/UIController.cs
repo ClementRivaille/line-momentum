@@ -88,7 +88,14 @@ public class UIController : MonoBehaviour
 
     public void OnToggleAccessibility(bool enabled)
     {
-        infoLog.text = enabled ? "Accessibility enabled" : "Accessibility disabled";
+        infoLog.text = enabled ? "Display: Helpful" : "Display: Default";
+        logFade = StartCoroutine(DisplayInfoLog());
+    }
+
+    public void OnUpdateSpeed(float speed)
+    {
+        var speedName = speed >= 2f ? "Very slow" : speed >= 1f ? "Middle slow" : "Default";
+        infoLog.text = "Speed: " + speedName;
         logFade = StartCoroutine(DisplayInfoLog());
     }
 

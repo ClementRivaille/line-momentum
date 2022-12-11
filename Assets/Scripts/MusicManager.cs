@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 public class MusicManager : MonoBehaviour
 {
@@ -18,6 +19,10 @@ public class MusicManager : MonoBehaviour
     public AK.Wwise.State EndSong;
 
     public AK.Wwise.Event LevelComplete;
+
+    public AK.Wwise.RTPC Speed;
+
+    public UnityEvent<float> OnSpeedChange = new UnityEvent<float> ();
 
     private uint PlayerID;
 
@@ -87,5 +92,16 @@ public class MusicManager : MonoBehaviour
     {
         StartEvent.Stop(gameObject);
         SuccessEvent.Post(gameObject);
+    }
+
+    public void ChangeMusicSpeed(InputAction.CallbackContext context)
+    {
+        if (context.phase != InputActionPhase.Performed) return;
+
+        var value = Speed.GetValue(gameObject);
+        value = value >= 2f ? 0f : value + 1f;
+        Speed.SetGlobalValue(value);
+
+        OnSpeedChange.Invoke(value);
     }
 }

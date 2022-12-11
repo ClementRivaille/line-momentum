@@ -6,6 +6,39 @@
 				<MusicSwitchContainer Name="Music" ID="{CB7313A0-0869-41A2-929C-8739520D3CCF}" ShortID="326289888">
 					<PropertyList>
 						<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
+						<Property Name="PlaybackSpeed" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{2C5CD411-97EC-49AD-9FED-E0DB4CFF2792}" ShortID="682429338">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Speed" ID="{520991B7-C950-48E7-806A-4346547600B4}" WorkUnitID="{362A3CB3-E465-46CD-BC4A-765D71C2D7F4}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{FF1159CC-B282-4855-B967-A60FAA6762A5}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="1"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>1</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>0.9</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>2</XPos>
+												<YPos>0.8</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 						<Property Name="Tempo" Type="Real64" Value="145"/>
 						<Property Name="TimeSignatureUpper" Type="int16" Value="5"/>
 					</PropertyList>
@@ -678,6 +711,11 @@
 										<MusicTrack Name="Level1 Pizzicato Render 0" ID="{F191BB68-0FFD-4CE9-B6A1-F9537443C669}" ShortID="382644593">
 											<PropertyList>
 												<Property Name="MusicTrackType" Type="int16" Value="3"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
@@ -891,6 +929,11 @@
 										<MusicTrack Name="Level1 Vibra" ID="{61469084-A5F1-4649-91DF-226294DD5459}" ShortID="754405949">
 											<PropertyList>
 												<Property Name="MusicTrackType" Type="int16" Value="3"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-1</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -3596,7 +3639,6 @@
 																		</Reference>
 																	</ObjectList>
 																</ObjectLists>
-																<ReferenceList/>
 															</MusicTrackSequence>
 														</Local>
 													</Reference>
@@ -3814,12 +3856,12 @@
 																								<PointList>
 																									<Point>
 																										<XPos>0</XPos>
-																										<YPos>-0</YPos>
+																										<YPos>0</YPos>
 																										<Flags>5</Flags>
 																									</Point>
 																									<Point>
 																										<XPos>4.1379375</XPos>
-																										<YPos>-0</YPos>
+																										<YPos>0</YPos>
 																										<Flags>37</Flags>
 																									</Point>
 																								</PointList>
@@ -3862,12 +3904,12 @@
 																								<PointList>
 																									<Point>
 																										<XPos>0</XPos>
-																										<YPos>-0</YPos>
+																										<YPos>0</YPos>
 																										<Flags>5</Flags>
 																									</Point>
 																									<Point>
 																										<XPos>4.1379375</XPos>
-																										<YPos>-0</YPos>
+																										<YPos>0</YPos>
 																										<Flags>37</Flags>
 																									</Point>
 																								</PointList>
@@ -3910,12 +3952,12 @@
 																								<PointList>
 																									<Point>
 																										<XPos>0</XPos>
-																										<YPos>-0</YPos>
+																										<YPos>0</YPos>
 																										<Flags>5</Flags>
 																									</Point>
 																									<Point>
 																										<XPos>4.1379375</XPos>
-																										<YPos>-0</YPos>
+																										<YPos>0</YPos>
 																										<Flags>37</Flags>
 																									</Point>
 																								</PointList>
@@ -3958,12 +4000,12 @@
 																								<PointList>
 																									<Point>
 																										<XPos>0</XPos>
-																										<YPos>-0</YPos>
+																										<YPos>0</YPos>
 																										<Flags>5</Flags>
 																									</Point>
 																									<Point>
 																										<XPos>4.1379375</XPos>
-																										<YPos>-0</YPos>
+																										<YPos>0</YPos>
 																										<Flags>37</Flags>
 																									</Point>
 																								</PointList>
@@ -4006,12 +4048,12 @@
 																								<PointList>
 																									<Point>
 																										<XPos>0</XPos>
-																										<YPos>-0</YPos>
+																										<YPos>0</YPos>
 																										<Flags>5</Flags>
 																									</Point>
 																									<Point>
 																										<XPos>4.1379375</XPos>
-																										<YPos>-0</YPos>
+																										<YPos>0</YPos>
 																										<Flags>37</Flags>
 																									</Point>
 																								</PointList>
@@ -4666,6 +4708,13 @@
 											</ObjectLists>
 										</MusicTrack>
 										<MusicTrack Name="Level5 Cello Pizzicato Render 0" ID="{09F10585-3325-446E-B7EE-C2A150F0C4A3}" ShortID="1060893309">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3624E84B-9D33-4911-957A-2BDEE1537685}"/>
@@ -5664,6 +5713,39 @@
 				<MusicSegment Name="Chords" ID="{04F918B6-BBA9-44C5-8075-7F973AF11A31}" ShortID="83190656">
 					<PropertyList>
 						<Property Name="EndPosition" Type="Real64" Value="4262.9375"/>
+						<Property Name="PlaybackSpeed" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{3F2E9477-D33B-4ABE-9F6A-6D278E8152F2}" ShortID="997125382">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Speed" ID="{520991B7-C950-48E7-806A-4346547600B4}" WorkUnitID="{362A3CB3-E465-46CD-BC4A-765D71C2D7F4}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{5267525B-4482-4901-9C0B-4DDC646849FB}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="1"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>1</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>0.9</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>2</XPos>
+												<YPos>0.8</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -6481,6 +6563,11 @@
 										<MusicTrack Name="Level1 Pizzicato Render 0" ID="{60C9F6D0-772C-4768-91F4-5875F3E3B900}" ShortID="272814738">
 											<PropertyList>
 												<Property Name="MusicTrackType" Type="int16" Value="3"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
@@ -6613,6 +6700,11 @@
 										<MusicTrack Name="Level1 Vibra" ID="{8AD4AEF4-F54D-4531-944D-07FE0A320FF7}" ShortID="614808988">
 											<PropertyList>
 												<Property Name="MusicTrackType" Type="int16" Value="3"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-1</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
@@ -8897,6 +8989,11 @@
 										<MusicTrack Name="Level5 Cello Pizzicato Render 0" ID="{51F4D5EB-6D45-42B3-990F-4E3D00CFF380}" ShortID="782137948">
 											<PropertyList>
 												<Property Name="MusicTrackType" Type="int16" Value="3"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
@@ -9630,12 +9727,12 @@
 																								<PointList>
 																									<Point>
 																										<XPos>0</XPos>
-																										<YPos>-0</YPos>
+																										<YPos>0</YPos>
 																										<Flags>5</Flags>
 																									</Point>
 																									<Point>
 																										<XPos>4.1379375</XPos>
-																										<YPos>-0</YPos>
+																										<YPos>0</YPos>
 																										<Flags>37</Flags>
 																									</Point>
 																								</PointList>

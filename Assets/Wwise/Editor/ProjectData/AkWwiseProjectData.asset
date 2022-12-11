@@ -193,7 +193,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: b33c2a3665e4cd46bc4a765d71c2d7f4
     GuidInternal: 
-    m_lastTime: -8585351654197892543
+    m_lastTime: -8585308300698595043
     List:
     - name: Progress
       guid: 9b9806aafdcda04798be7ecb9bbcd57e
@@ -209,6 +209,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: 9b9806aafdcda04798be7ecb9bbcd57e
       Path: Game Parameters\Default Work Unit\Progress
+    - name: Speed
+      guid: b791095250c9e748806a4346547600b4
+      id: 640949982
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b33c2a3665e4cd46bc4a765d71c2d7f4
+      - ElementName: Speed
+        ObjectType: 13
+        guid: b791095250c9e748806a4346547600b4
+      Path: Game Parameters\Default Work Unit\Speed
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -1695,7 +1709,7 @@ MonoBehaviour:
     m_lastTime: -8585351558114883533
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000200000003000000050000000600000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001200000013000000140000001500000018000000190000004200000045000000480000004a0000004b0000004d0000004e00000051000000570000005a000000
+  ExpandedWaapiItemIds: 010000000200000003000000050000000600000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001200000013000000140000001500000018000000190000001d0000001e0000004200000045000000480000004a0000004b0000004d0000004e00000051000000570000005a000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
