@@ -1382,16 +1382,6 @@ MonoBehaviour:
       groupGuidInternal: 
       WwiseObjectReference: {fileID: 11400000, guid: 87249f47d389a6946ad6f670f32d6d0d, type: 2}
     beats: 0200000003000000050000000600000008000000
-  - id: 1
-    color: {r: 0, g: 0.8113208, b: 0.7767178, a: 1}
-    barColor: {r: 0.36777, g: 0.943, b: 0.91799, a: 1}
-    State:
-      idInternal: 0
-      valueGuidInternal: 
-      groupIdInternal: 0
-      groupGuidInternal: 
-      WwiseObjectReference: {fileID: 11400000, guid: b448ba0f1cf6f5949949118637b75f1b, type: 2}
-    beats: 0100000003000000040000000600000008000000
   - id: 2
     color: {r: 0.94509804, g: 0.5921569, b: 0.3372549, a: 1}
     barColor: {r: 0.95294124, g: 0.73333335, b: 0.56078434, a: 1}
@@ -1402,6 +1392,16 @@ MonoBehaviour:
       groupGuidInternal: 
       WwiseObjectReference: {fileID: 11400000, guid: 55ea02fc0cafd3143856b5055c137f30, type: 2}
     beats: 0000000002000000050000000700000008000000
+  - id: 1
+    color: {r: 0, g: 0.8113208, b: 0.7767178, a: 1}
+    barColor: {r: 0.36777, g: 0.943, b: 0.91799, a: 1}
+    State:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: b448ba0f1cf6f5949949118637b75f1b, type: 2}
+    beats: 0100000003000000040000000600000008000000
   - id: 5
     color: {r: 0.08627451, g: 0.2627451, b: 0.20784314, a: 1}
     barColor: {r: 0.5787796, g: 0.637, b: 0.6198764, a: 1}
