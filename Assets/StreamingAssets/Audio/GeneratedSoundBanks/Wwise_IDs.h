@@ -33,6 +33,8 @@ namespace AK
                 static const AkUniqueID LEVEL2 = 2678230381U;
                 static const AkUniqueID LEVEL3 = 2678230380U;
                 static const AkUniqueID LEVEL4 = 2678230379U;
+                static const AkUniqueID LEVEL5 = 2678230378U;
+                static const AkUniqueID LEVEL6 = 2678230377U;
                 static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
         } // namespace LEVEL
@@ -97,6 +99,7 @@ namespace AK
                 static const AkUniqueID LAYER4 = 3298531300U;
                 static const AkUniqueID LAYER5 = 3298531301U;
                 static const AkUniqueID LAYER6 = 3298531302U;
+                static const AkUniqueID LAYER7 = 3298531303U;
             } // namespace SWITCH
         } // namespace LEVEL1LAYERS
 
@@ -145,6 +148,38 @@ namespace AK
                 static const AkUniqueID LAYER7 = 3298531303U;
             } // namespace SWITCH
         } // namespace LEVEL4LAYERS
+
+        namespace LEVEL5LAYERS
+        {
+            static const AkUniqueID GROUP = 1730033728U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID LAYER1 = 3298531297U;
+                static const AkUniqueID LAYER2 = 3298531298U;
+                static const AkUniqueID LAYER3 = 3298531299U;
+                static const AkUniqueID LAYER4 = 3298531300U;
+                static const AkUniqueID LAYER5 = 3298531301U;
+                static const AkUniqueID LAYER6 = 3298531302U;
+                static const AkUniqueID LAYER7 = 3298531303U;
+            } // namespace SWITCH
+        } // namespace LEVEL5LAYERS
+
+        namespace LEVEL6LAYERS
+        {
+            static const AkUniqueID GROUP = 2204798039U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID LAYER1 = 3298531297U;
+                static const AkUniqueID LAYER2 = 3298531298U;
+                static const AkUniqueID LAYER3 = 3298531299U;
+                static const AkUniqueID LAYER4 = 3298531300U;
+                static const AkUniqueID LAYER5 = 3298531301U;
+                static const AkUniqueID LAYER6 = 3298531302U;
+                static const AkUniqueID LAYER7 = 3298531303U;
+            } // namespace SWITCH
+        } // namespace LEVEL6LAYERS
 
         namespace MARIMBA
         {

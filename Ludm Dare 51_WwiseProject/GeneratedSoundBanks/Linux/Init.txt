@@ -1,5 +1,7 @@
 Switch Group	ID	Name			Wwise Object Path	Notes
 	336214873	Level4Layers			\Default Work Unit\Level4Layers	
+	1730033728	Level5Layers			\Default Work Unit\Level5Layers	
+	2204798039	Level6Layers			\Default Work Unit\Level6Layers	
 	3011217259	Level2Layers			\Default Work Unit\Level2Layers	
 	3776735618	Level3Layers			\Default Work Unit\Level3Layers	
 	3915065012	Level1Layers			\Default Work Unit\Level1Layers	
@@ -12,6 +14,20 @@ Switch	ID	Name	Switch Group			Notes
 	3298531301	Layer5	Level4Layers			
 	3298531302	Layer6	Level4Layers			
 	3298531303	Layer7	Level4Layers			
+	3298531297	Layer1	Level5Layers			
+	3298531298	Layer2	Level5Layers			
+	3298531299	Layer3	Level5Layers			
+	3298531300	Layer4	Level5Layers			
+	3298531301	Layer5	Level5Layers			
+	3298531302	Layer6	Level5Layers			
+	3298531303	Layer7	Level5Layers			
+	3298531297	Layer1	Level6Layers			
+	3298531298	Layer2	Level6Layers			
+	3298531299	Layer3	Level6Layers			
+	3298531300	Layer4	Level6Layers			
+	3298531301	Layer5	Level6Layers			
+	3298531302	Layer6	Level6Layers			
+	3298531303	Layer7	Level6Layers			
 	3298531297	Layer1	Level2Layers			
 	3298531298	Layer2	Level2Layers			
 	3298531299	Layer3	Level2Layers			
@@ -30,12 +46,15 @@ Switch	ID	Name	Switch Group			Notes
 	3298531300	Layer4	Level1Layers			
 	3298531301	Layer5	Level1Layers			
 	3298531302	Layer6	Level1Layers			
+	3298531303	Layer7	Level1Layers			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	2782712965	Level			\Default Work Unit\Level	
 
 State	ID	Name	State Group			Notes
 	748895195	None	Level			
+	2678230377	Level6	Level			
+	2678230378	Level5	Level			
 	2678230379	Level4	Level			
 	2678230380	Level3	Level			
 	2678230381	Level2	Level			

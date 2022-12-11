@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3943281991">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3906405238">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3589812408" Language="SFX" Hash="2926198697">
+		<SoundBank Id="3589812408" Language="SFX" Hash="3335315399">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music_SoundBank</ObjectPath>
 			<ShortName>Music_SoundBank</ShortName>
 			<Path>Music_SoundBank.bnk</Path>
@@ -27,9 +27,17 @@
 							<ShortName>Level4 Chord.wav</ShortName>
 							<Path>SFX\Level4 Chord_D79FB2B7.wem</Path>
 						</File>
+						<File Id="379492125" Language="SFX">
+							<ShortName>Level5 Piano chords Render 0.wav</ShortName>
+							<Path>SFX\Level5 Piano chords Render 0_D79FB2B7.wem</Path>
+						</File>
 						<File Id="394420302" Language="SFX">
 							<ShortName>Level2 Chord.wav</ShortName>
 							<Path>SFX\Level2 Chord_D79FB2B7.wem</Path>
+						</File>
+						<File Id="502263517" Language="SFX">
+							<ShortName>Level6 Piano chords Render 0.wav</ShortName>
+							<Path>SFX\Level6 Piano chords Render 0_D79FB2B7.wem</Path>
 						</File>
 						<File Id="712439921" Language="SFX">
 							<ShortName>Level1 Chord.wav</ShortName>
@@ -51,9 +59,17 @@
 				</Event>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="20905240" Language="SFX">
+							<ShortName>Level_5\Level5 Cellis Long Render 0.wav</ShortName>
+							<Path>SFX\Level_5\Level5 Cellis Long Render 0_D79FB2B7.wem</Path>
+						</File>
 						<File Id="66630324" Language="SFX">
 							<ShortName>Level_1\Level1 Cello Pizzicato Render 0.wav</ShortName>
 							<Path>SFX\Level_1\Level1 Cello Pizzicato Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="149073134" Language="SFX">
+							<ShortName>Level_5\Level5 Guitar Render 0.wav</ShortName>
+							<Path>SFX\Level_5\Level5 Guitar Render 0_D79FB2B7.wem</Path>
 						</File>
 						<File Id="171094702" Language="SFX">
 							<ShortName>Level_3\Level3 Marimba Render 0.wav</ShortName>
@@ -66,6 +82,10 @@
 						<File Id="200334130" Language="SFX">
 							<ShortName>Ending.wav</ShortName>
 							<Path>SFX\Ending_D79FB2B7.wem</Path>
+						</File>
+						<File Id="204591210" Language="SFX">
+							<ShortName>Level_6\Level6 Vibra Render 0.wav</ShortName>
+							<Path>SFX\Level_6\Level6 Vibra Render 0_D79FB2B7.wem</Path>
 						</File>
 						<File Id="214956562" Language="SFX">
 							<ShortName>Level_4\Level4 Flutes Render 0.wav</ShortName>
@@ -87,9 +107,29 @@
 							<ShortName>Level_2\Level2 Charango Render 0.wav</ShortName>
 							<Path>SFX\Level_2\Level2 Charango Render 0_D79FB2B7.wem</Path>
 						</File>
+						<File Id="341596294" Language="SFX">
+							<ShortName>Level_5\Level5 Charango Render 0.wav</ShortName>
+							<Path>SFX\Level_5\Level5 Charango Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="355306936" Language="SFX">
+							<ShortName>Level_5\Level5 Vibra Render 0.wav</ShortName>
+							<Path>SFX\Level_5\Level5 Vibra Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="361485617" Language="SFX">
+							<ShortName>Level1 Vibra.wav</ShortName>
+							<Path>SFX\Level1 Vibra_D79FB2B7.wem</Path>
+						</File>
 						<File Id="365508424" Language="SFX">
 							<ShortName>Level_1\Level1 Guitar Render 0.wav</ShortName>
 							<Path>SFX\Level_1\Level1 Guitar Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="379608713" Language="SFX">
+							<ShortName>Level_5\Level5 Piano Render 0.wav</ShortName>
+							<Path>SFX\Level_5\Level5 Piano Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="388098491" Language="SFX">
+							<ShortName>Level_5\Level5 Cello Pizzicato Render 0.wav</ShortName>
+							<Path>SFX\Level_5\Level5 Cello Pizzicato Render 0_D79FB2B7.wem</Path>
 						</File>
 						<File Id="394342343" Language="SFX">
 							<ShortName>Level_2\Level2 Piano Render 0.wav</ShortName>
@@ -102,6 +142,14 @@
 						<File Id="458391835" Language="SFX">
 							<ShortName>Level_4\Level4 Pizzicato Render 0.wav</ShortName>
 							<Path>SFX\Level_4\Level4 Pizzicato Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="510206169" Language="SFX">
+							<ShortName>Level_6\Level6 Guitar Render 0.wav</ShortName>
+							<Path>SFX\Level_6\Level6 Guitar Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="516477095" Language="SFX">
+							<ShortName>Level_5\Level5 Marimba Render 0.wav</ShortName>
+							<Path>SFX\Level_5\Level5 Marimba Render 0_D79FB2B7.wem</Path>
 						</File>
 						<File Id="582692736" Language="SFX">
 							<ShortName>Level_3\Level3 Cellis Render 0.wav</ShortName>
@@ -123,6 +171,10 @@
 							<ShortName>Level_3\Level3 Clarinet Render 0.wav</ShortName>
 							<Path>SFX\Level_3\Level3 Clarinet Render 0_D79FB2B7.wem</Path>
 						</File>
+						<File Id="705782961" Language="SFX">
+							<ShortName>Level_6\Level6 Piano Render 0.wav</ShortName>
+							<Path>SFX\Level_6\Level6 Piano Render 0_D79FB2B7.wem</Path>
+						</File>
 						<File Id="707328310" Language="SFX">
 							<ShortName>Level1 Piano Render 0.wav</ShortName>
 							<Path>SFX\Level1 Piano Render 0_D79FB2B7.wem</Path>
@@ -130,6 +182,10 @@
 						<File Id="732041479" Language="SFX">
 							<ShortName>Level_2\Level2 Cellis Render 0.wav</ShortName>
 							<Path>SFX\Level_2\Level2 Cellis Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="754029672" Language="SFX">
+							<ShortName>Level_6\Level6 Flutes Render 0.wav</ShortName>
+							<Path>SFX\Level_6\Level6 Flutes Render 0_D79FB2B7.wem</Path>
 						</File>
 						<File Id="800582581" Language="SFX">
 							<ShortName>Level_1\Level1 Charango Render 0.wav</ShortName>
@@ -147,6 +203,10 @@
 							<ShortName>Level_1\Level1 Flutes Render 0.wav</ShortName>
 							<Path>SFX\Level_1\Level1 Flutes Render 0_D79FB2B7.wem</Path>
 						</File>
+						<File Id="859551605" Language="SFX">
+							<ShortName>Level_6\Level6 Marimba Render 0.wav</ShortName>
+							<Path>SFX\Level_6\Level6 Marimba Render 0_D79FB2B7.wem</Path>
+						</File>
 						<File Id="892274022" Language="SFX">
 							<ShortName>Level_4\Level4 Piano Render 0.wav</ShortName>
 							<Path>SFX\Level_4\Level4 Piano Render 0_D79FB2B7.wem</Path>
@@ -159,9 +219,21 @@
 							<ShortName>Level_1\Level1 Pizzicato Render 0.wav</ShortName>
 							<Path>SFX\Level_1\Level1 Pizzicato Render 0_D79FB2B7.wem</Path>
 						</File>
+						<File Id="1023555017" Language="SFX">
+							<ShortName>Level_5\Level5 Clarinet Render 0.wav</ShortName>
+							<Path>SFX\Level_5\Level5 Clarinet Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1026975046" Language="SFX">
+							<ShortName>Level_6\Level6 Pizzicato Render 0.wav</ShortName>
+							<Path>SFX\Level_6\Level6 Pizzicato Render 0_D79FB2B7.wem</Path>
+						</File>
 						<File Id="1037946972" Language="SFX">
 							<ShortName>Level_3\Level3 Vibra Render 0.wav</ShortName>
 							<Path>SFX\Level_3\Level3 Vibra Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1043009174" Language="SFX">
+							<ShortName>Level_6\Level6 Charango Render 0.wav</ShortName>
+							<Path>SFX\Level_6\Level6 Charango Render 0_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -169,6 +241,7 @@
 							<Media>
 								<File Id="66630324"/>
 								<File Id="232522700"/>
+								<File Id="361485617"/>
 								<File Id="365508424"/>
 								<File Id="707328310"/>
 								<File Id="800582581"/>
@@ -213,6 +286,29 @@
 								<File Id="200334130"/>
 							</Media>
 						</SwitchContainer>
+						<SwitchContainer SwitchValue="{D290395A-F0D5-41FE-8A58-AFAE17834985}">
+							<Media>
+								<File Id="20905240"/>
+								<File Id="149073134"/>
+								<File Id="341596294"/>
+								<File Id="355306936"/>
+								<File Id="379608713"/>
+								<File Id="388098491"/>
+								<File Id="516477095"/>
+								<File Id="1023555017"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{B479AAC4-95A0-42B0-A5C7-F3776035A246}">
+							<Media>
+								<File Id="204591210"/>
+								<File Id="510206169"/>
+								<File Id="705782961"/>
+								<File Id="754029672"/>
+								<File Id="859551605"/>
+								<File Id="1026975046"/>
+								<File Id="1043009174"/>
+							</Media>
+						</SwitchContainer>
 					</SwitchContainers>
 					<ActionSetState>
 						<ActionSetStateEntry Id="2678230382" Name="Level1" ObjectPath="\States\Default Work Unit\Level\Level1"/>
@@ -220,9 +316,17 @@
 				</Event>
 				<Event Id="408356204" Name="Play_Studio" ObjectPath="\Events\Default Work Unit\Play_Studio" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="20905240" Language="SFX">
+							<ShortName>Level_5\Level5 Cellis Long Render 0.wav</ShortName>
+							<Path>SFX\Level_5\Level5 Cellis Long Render 0_D79FB2B7.wem</Path>
+						</File>
 						<File Id="66630324" Language="SFX">
 							<ShortName>Level_1\Level1 Cello Pizzicato Render 0.wav</ShortName>
 							<Path>SFX\Level_1\Level1 Cello Pizzicato Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="149073134" Language="SFX">
+							<ShortName>Level_5\Level5 Guitar Render 0.wav</ShortName>
+							<Path>SFX\Level_5\Level5 Guitar Render 0_D79FB2B7.wem</Path>
 						</File>
 						<File Id="171094702" Language="SFX">
 							<ShortName>Level_3\Level3 Marimba Render 0.wav</ShortName>
@@ -231,6 +335,10 @@
 						<File Id="172485300" Language="SFX">
 							<ShortName>Level_4\Level4 Cello Pizzicato Render 0.wav</ShortName>
 							<Path>SFX\Level_4\Level4 Cello Pizzicato Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="204591210" Language="SFX">
+							<ShortName>Level_6\Level6 Vibra Render 0.wav</ShortName>
+							<Path>SFX\Level_6\Level6 Vibra Render 0_D79FB2B7.wem</Path>
 						</File>
 						<File Id="214956562" Language="SFX">
 							<ShortName>Level_4\Level4 Flutes Render 0.wav</ShortName>
@@ -244,6 +352,10 @@
 							<ShortName>Level_2\Level2 Guitar Render 0.wav</ShortName>
 							<Path>SFX\Level_2\Level2 Guitar Render 0_D79FB2B7.wem</Path>
 						</File>
+						<File Id="278639406" Language="SFX">
+							<ShortName>Ending_Studio\Ending Piano Render 0.wav</ShortName>
+							<Path>SFX\Ending_Studio\Ending Piano Render 0_D79FB2B7.wem</Path>
+						</File>
 						<File Id="302404687" Language="SFX">
 							<ShortName>Level_3\Level3 Guitar Render 0.wav</ShortName>
 							<Path>SFX\Level_3\Level3 Guitar Render 0_D79FB2B7.wem</Path>
@@ -252,9 +364,29 @@
 							<ShortName>Level_2\Level2 Charango Render 0.wav</ShortName>
 							<Path>SFX\Level_2\Level2 Charango Render 0_D79FB2B7.wem</Path>
 						</File>
+						<File Id="341596294" Language="SFX">
+							<ShortName>Level_5\Level5 Charango Render 0.wav</ShortName>
+							<Path>SFX\Level_5\Level5 Charango Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="355306936" Language="SFX">
+							<ShortName>Level_5\Level5 Vibra Render 0.wav</ShortName>
+							<Path>SFX\Level_5\Level5 Vibra Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="361485617" Language="SFX">
+							<ShortName>Level1 Vibra.wav</ShortName>
+							<Path>SFX\Level1 Vibra_D79FB2B7.wem</Path>
+						</File>
 						<File Id="365508424" Language="SFX">
 							<ShortName>Level_1\Level1 Guitar Render 0.wav</ShortName>
 							<Path>SFX\Level_1\Level1 Guitar Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="379608713" Language="SFX">
+							<ShortName>Level_5\Level5 Piano Render 0.wav</ShortName>
+							<Path>SFX\Level_5\Level5 Piano Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="388098491" Language="SFX">
+							<ShortName>Level_5\Level5 Cello Pizzicato Render 0.wav</ShortName>
+							<Path>SFX\Level_5\Level5 Cello Pizzicato Render 0_D79FB2B7.wem</Path>
 						</File>
 						<File Id="394342343" Language="SFX">
 							<ShortName>Level_2\Level2 Piano Render 0.wav</ShortName>
@@ -268,6 +400,18 @@
 							<ShortName>Level_4\Level4 Pizzicato Render 0.wav</ShortName>
 							<Path>SFX\Level_4\Level4 Pizzicato Render 0_D79FB2B7.wem</Path>
 						</File>
+						<File Id="462759268" Language="SFX">
+							<ShortName>Ending_Studio\Ending Charango Render 0.wav</ShortName>
+							<Path>SFX\Ending_Studio\Ending Charango Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="510206169" Language="SFX">
+							<ShortName>Level_6\Level6 Guitar Render 0.wav</ShortName>
+							<Path>SFX\Level_6\Level6 Guitar Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="516477095" Language="SFX">
+							<ShortName>Level_5\Level5 Marimba Render 0.wav</ShortName>
+							<Path>SFX\Level_5\Level5 Marimba Render 0_D79FB2B7.wem</Path>
+						</File>
 						<File Id="582692736" Language="SFX">
 							<ShortName>Level_3\Level3 Cellis Render 0.wav</ShortName>
 							<Path>SFX\Level_3\Level3 Cellis Render 0_D79FB2B7.wem</Path>
@@ -275,6 +419,10 @@
 						<File Id="599529706" Language="SFX">
 							<ShortName>Level_2\Level2 Marimba Render 0.wav</ShortName>
 							<Path>SFX\Level_2\Level2 Marimba Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="609013535" Language="SFX">
+							<ShortName>Ending_Studio\Ending Flutes Render 0.wav</ShortName>
+							<Path>SFX\Ending_Studio\Ending Flutes Render 0_D79FB2B7.wem</Path>
 						</File>
 						<File Id="653157198" Language="SFX">
 							<ShortName>Level_4\Level4 Charango Render 0.wav</ShortName>
@@ -288,13 +436,25 @@
 							<ShortName>Level_3\Level3 Clarinet Render 0.wav</ShortName>
 							<Path>SFX\Level_3\Level3 Clarinet Render 0_D79FB2B7.wem</Path>
 						</File>
+						<File Id="705782961" Language="SFX">
+							<ShortName>Level_6\Level6 Piano Render 0.wav</ShortName>
+							<Path>SFX\Level_6\Level6 Piano Render 0_D79FB2B7.wem</Path>
+						</File>
 						<File Id="707328310" Language="SFX">
 							<ShortName>Level1 Piano Render 0.wav</ShortName>
 							<Path>SFX\Level1 Piano Render 0_D79FB2B7.wem</Path>
 						</File>
+						<File Id="718324745" Language="SFX">
+							<ShortName>Ending_Studio\Ending Clarinet Render 0.wav</ShortName>
+							<Path>SFX\Ending_Studio\Ending Clarinet Render 0_D79FB2B7.wem</Path>
+						</File>
 						<File Id="732041479" Language="SFX">
 							<ShortName>Level_2\Level2 Cellis Render 0.wav</ShortName>
 							<Path>SFX\Level_2\Level2 Cellis Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="754029672" Language="SFX">
+							<ShortName>Level_6\Level6 Flutes Render 0.wav</ShortName>
+							<Path>SFX\Level_6\Level6 Flutes Render 0_D79FB2B7.wem</Path>
 						</File>
 						<File Id="800582581" Language="SFX">
 							<ShortName>Level_1\Level1 Charango Render 0.wav</ShortName>
@@ -312,6 +472,14 @@
 							<ShortName>Level_1\Level1 Flutes Render 0.wav</ShortName>
 							<Path>SFX\Level_1\Level1 Flutes Render 0_D79FB2B7.wem</Path>
 						</File>
+						<File Id="859551605" Language="SFX">
+							<ShortName>Level_6\Level6 Marimba Render 0.wav</ShortName>
+							<Path>SFX\Level_6\Level6 Marimba Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="863798057" Language="SFX">
+							<ShortName>Ending_Studio\Ending Guitar Render 0.wav</ShortName>
+							<Path>SFX\Ending_Studio\Ending Guitar Render 0_D79FB2B7.wem</Path>
+						</File>
 						<File Id="892274022" Language="SFX">
 							<ShortName>Level_4\Level4 Piano Render 0.wav</ShortName>
 							<Path>SFX\Level_4\Level4 Piano Render 0_D79FB2B7.wem</Path>
@@ -320,13 +488,33 @@
 							<ShortName>Level_4\Level4 Vibra Render 0.wav</ShortName>
 							<Path>SFX\Level_4\Level4 Vibra Render 0_D79FB2B7.wem</Path>
 						</File>
+						<File Id="979271405" Language="SFX">
+							<ShortName>Ending_Studio\Ending Marimba Render 0.wav</ShortName>
+							<Path>SFX\Ending_Studio\Ending Marimba Render 0_D79FB2B7.wem</Path>
+						</File>
 						<File Id="994415552" Language="SFX">
 							<ShortName>Level_1\Level1 Pizzicato Render 0.wav</ShortName>
 							<Path>SFX\Level_1\Level1 Pizzicato Render 0_D79FB2B7.wem</Path>
 						</File>
+						<File Id="1023555017" Language="SFX">
+							<ShortName>Level_5\Level5 Clarinet Render 0.wav</ShortName>
+							<Path>SFX\Level_5\Level5 Clarinet Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1026975046" Language="SFX">
+							<ShortName>Level_6\Level6 Pizzicato Render 0.wav</ShortName>
+							<Path>SFX\Level_6\Level6 Pizzicato Render 0_D79FB2B7.wem</Path>
+						</File>
 						<File Id="1037946972" Language="SFX">
 							<ShortName>Level_3\Level3 Vibra Render 0.wav</ShortName>
 							<Path>SFX\Level_3\Level3 Vibra Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1043009174" Language="SFX">
+							<ShortName>Level_6\Level6 Charango Render 0.wav</ShortName>
+							<Path>SFX\Level_6\Level6 Charango Render 0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1056833184" Language="SFX">
+							<ShortName>Ending_Studio\Ending Cello Pizzicato Render 0.wav</ShortName>
+							<Path>SFX\Ending_Studio\Ending Cello Pizzicato Render 0_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -334,6 +522,7 @@
 							<Media>
 								<File Id="66630324"/>
 								<File Id="232522700"/>
+								<File Id="361485617"/>
 								<File Id="365508424"/>
 								<File Id="707328310"/>
 								<File Id="800582581"/>
@@ -373,6 +562,40 @@
 								<File Id="923731464"/>
 							</Media>
 						</SwitchContainer>
+						<SwitchContainer SwitchValue="{D290395A-F0D5-41FE-8A58-AFAE17834985}">
+							<Media>
+								<File Id="20905240"/>
+								<File Id="149073134"/>
+								<File Id="341596294"/>
+								<File Id="355306936"/>
+								<File Id="379608713"/>
+								<File Id="388098491"/>
+								<File Id="516477095"/>
+								<File Id="1023555017"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{B479AAC4-95A0-42B0-A5C7-F3776035A246}">
+							<Media>
+								<File Id="204591210"/>
+								<File Id="510206169"/>
+								<File Id="705782961"/>
+								<File Id="754029672"/>
+								<File Id="859551605"/>
+								<File Id="1026975046"/>
+								<File Id="1043009174"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{3F6DC4A1-88E6-49C2-AB96-4BCF4879937B}">
+							<Media>
+								<File Id="278639406"/>
+								<File Id="462759268"/>
+								<File Id="609013535"/>
+								<File Id="718324745"/>
+								<File Id="863798057"/>
+								<File Id="979271405"/>
+								<File Id="1056833184"/>
+							</Media>
+						</SwitchContainer>
 					</SwitchContainers>
 					<ActionSetState>
 						<ActionSetStateEntry Id="2678230382" Name="Level1" ObjectPath="\States\Default Work Unit\Level\Level1"/>
@@ -402,6 +625,8 @@
 						<State Id="2678230380" Name="Level3" ObjectPath="\States\Default Work Unit\Level\Level3" GUID="{4C1A517D-017D-40E7-8376-94873BE63C6F}"/>
 						<State Id="2678230379" Name="Level4" ObjectPath="\States\Default Work Unit\Level\Level4" GUID="{3D13F315-A66E-400A-BFC8-7C003BFF80BB}"/>
 						<State Id="3966194980" Name="Ending" ObjectPath="\States\Default Work Unit\Level\Ending" GUID="{3F6DC4A1-88E6-49C2-AB96-4BCF4879937B}"/>
+						<State Id="2678230378" Name="Level5" ObjectPath="\States\Default Work Unit\Level\Level5" GUID="{D290395A-F0D5-41FE-8A58-AFAE17834985}"/>
+						<State Id="2678230377" Name="Level6" ObjectPath="\States\Default Work Unit\Level\Level6" GUID="{B479AAC4-95A0-42B0-A5C7-F3776035A246}"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
@@ -441,10 +666,32 @@
 						<Switch Id="930712164" Name="off" ObjectPath="\Switches\Default Work Unit\Studio\Piano\off" GUID="{93F59EA3-68CD-49C9-952F-144B680421EF}"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="1730033728" Name="Level5Layers" ObjectPath="\Switches\Default Work Unit\Level5Layers" GUID="{840479A3-1608-43A7-849A-57D110ACFA32}">
+					<Switches>
+						<Switch Id="3298531297" Name="Layer1" ObjectPath="\Switches\Default Work Unit\Level5Layers\Layer1" GUID="{A91F0988-8340-4C6B-A464-F4DD6947D323}"/>
+						<Switch Id="3298531298" Name="Layer2" ObjectPath="\Switches\Default Work Unit\Level5Layers\Layer2" GUID="{AF03459B-AF54-4DED-8D56-69747F3907C6}"/>
+						<Switch Id="3298531299" Name="Layer3" ObjectPath="\Switches\Default Work Unit\Level5Layers\Layer3" GUID="{AB68CE49-32C5-467F-A47E-371908F08622}"/>
+						<Switch Id="3298531300" Name="Layer4" ObjectPath="\Switches\Default Work Unit\Level5Layers\Layer4" GUID="{D6E3F1C6-91C0-4AE6-9D65-4167B59ADC32}"/>
+						<Switch Id="3298531301" Name="Layer5" ObjectPath="\Switches\Default Work Unit\Level5Layers\Layer5" GUID="{BB80F497-4CD3-48A4-8781-5EF49361D871}"/>
+						<Switch Id="3298531302" Name="Layer6" ObjectPath="\Switches\Default Work Unit\Level5Layers\Layer6" GUID="{D2A70078-70A7-46BA-B377-139F013E1291}"/>
+						<Switch Id="3298531303" Name="Layer7" ObjectPath="\Switches\Default Work Unit\Level5Layers\Layer7" GUID="{CB295DFC-5439-4A85-BBA8-DCB1597A0B21}"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="2077337834" Name="Pizzicato" ObjectPath="\Switches\Default Work Unit\Studio\Pizzicato" GUID="{A7946276-7354-46F0-87FD-FCFFDE49A96B}">
 					<Switches>
 						<Switch Id="1651971902" Name="on" ObjectPath="\Switches\Default Work Unit\Studio\Pizzicato\on" GUID="{AAAEAD57-2115-4FCE-B1F6-8F34A7B2C356}"/>
 						<Switch Id="930712164" Name="off" ObjectPath="\Switches\Default Work Unit\Studio\Pizzicato\off" GUID="{6B461203-A96E-4790-B033-50A9090D5FF4}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="2204798039" Name="Level6Layers" ObjectPath="\Switches\Default Work Unit\Level6Layers" GUID="{E56411EB-29C4-4D65-9B61-9199AFD7DFE4}">
+					<Switches>
+						<Switch Id="3298531297" Name="Layer1" ObjectPath="\Switches\Default Work Unit\Level6Layers\Layer1" GUID="{D197E3F0-B7A6-4E79-BC40-942238777342}"/>
+						<Switch Id="3298531298" Name="Layer2" ObjectPath="\Switches\Default Work Unit\Level6Layers\Layer2" GUID="{DE331A7C-E838-4EB1-81BC-945B5EEB6204}"/>
+						<Switch Id="3298531299" Name="Layer3" ObjectPath="\Switches\Default Work Unit\Level6Layers\Layer3" GUID="{D85E9E23-4029-40E9-A8A8-F3AAC14D18FA}"/>
+						<Switch Id="3298531300" Name="Layer4" ObjectPath="\Switches\Default Work Unit\Level6Layers\Layer4" GUID="{2BA15960-3931-426C-B984-4595DC0905E6}"/>
+						<Switch Id="3298531301" Name="Layer5" ObjectPath="\Switches\Default Work Unit\Level6Layers\Layer5" GUID="{CD3156F2-C864-4FDC-B9DF-E9C517AAE0D9}"/>
+						<Switch Id="3298531302" Name="Layer6" ObjectPath="\Switches\Default Work Unit\Level6Layers\Layer6" GUID="{08D17EE4-9538-49A9-AF77-6AC5F93D5314}"/>
+						<Switch Id="3298531303" Name="Layer7" ObjectPath="\Switches\Default Work Unit\Level6Layers\Layer7" GUID="{03F8B6FB-351C-41F8-9310-E1474BB4635D}"/>
 					</Switches>
 				</SwitchGroup>
 				<SwitchGroup Id="2302454438" Name="Charango" ObjectPath="\Switches\Default Work Unit\Studio\Charango" GUID="{E5C3F8A2-2D3D-4128-8D41-EB6523200A57}">
@@ -499,6 +746,7 @@
 						<Switch Id="3298531300" Name="Layer4" ObjectPath="\Switches\Default Work Unit\Level1Layers\Layer4" GUID="{71523295-13D6-42A6-892E-B1EA2A023578}"/>
 						<Switch Id="3298531301" Name="Layer5" ObjectPath="\Switches\Default Work Unit\Level1Layers\Layer5" GUID="{FD41F736-C2CD-4F3D-A210-13FBED6ADFDA}"/>
 						<Switch Id="3298531302" Name="Layer6" ObjectPath="\Switches\Default Work Unit\Level1Layers\Layer6" GUID="{35BF1566-33BB-47E2-91DD-C43FABF48CB3}"/>
+						<Switch Id="3298531303" Name="Layer7" ObjectPath="\Switches\Default Work Unit\Level1Layers\Layer7" GUID="{8DAB761E-ABE7-4A18-8CC0-2A1673D89380}"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>

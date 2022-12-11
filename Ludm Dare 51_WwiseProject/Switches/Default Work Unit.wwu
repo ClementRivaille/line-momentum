@@ -14,6 +14,7 @@
 						<Switch Name="Layer4" ID="{71523295-13D6-42A6-892E-B1EA2A023578}"/>
 						<Switch Name="Layer5" ID="{FD41F736-C2CD-4F3D-A210-13FBED6ADFDA}"/>
 						<Switch Name="Layer6" ID="{35BF1566-33BB-47E2-91DD-C43FABF48CB3}"/>
+						<Switch Name="Layer7" ID="{8DAB761E-ABE7-4A18-8CC0-2A1673D89380}"/>
 					</ChildrenList>
 					<SwitchOnRTPC>
 						<GameParameterRef Name="Progress" ID="{AA06989B-CDFD-47A0-98BE-7ECB9BBCD57E}"/>
@@ -48,8 +49,13 @@
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>10</XPos>
+									<XPos>9</XPos>
 									<YPos>6</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>10</XPos>
+									<YPos>7</YPos>
 									<Flags>37</Flags>
 								</Point>
 							</PointList>
@@ -284,6 +290,124 @@
 						</SwitchGroup>
 					</ChildrenList>
 				</Folder>
+				<SwitchGroup Name="Level5Layers" ID="{840479A3-1608-43A7-849A-57D110ACFA32}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Layer1" ID="{A91F0988-8340-4C6B-A464-F4DD6947D323}"/>
+						<Switch Name="Layer2" ID="{AF03459B-AF54-4DED-8D56-69747F3907C6}"/>
+						<Switch Name="Layer3" ID="{AB68CE49-32C5-467F-A47E-371908F08622}"/>
+						<Switch Name="Layer4" ID="{D6E3F1C6-91C0-4AE6-9D65-4167B59ADC32}"/>
+						<Switch Name="Layer5" ID="{BB80F497-4CD3-48A4-8781-5EF49361D871}"/>
+						<Switch Name="Layer6" ID="{D2A70078-70A7-46BA-B377-139F013E1291}"/>
+						<Switch Name="Layer7" ID="{CB295DFC-5439-4A85-BBA8-DCB1597A0B21}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Progress" ID="{AA06989B-CDFD-47A0-98BE-7ECB9BBCD57E}"/>
+						<Curve Name="" ID="{49439343-BAC9-48AD-8054-7D97FC757892}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>3</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>5</XPos>
+									<YPos>4</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>6</XPos>
+									<YPos>5</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>8</XPos>
+									<YPos>6</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>10</XPos>
+									<YPos>7</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="Level6Layers" ID="{E56411EB-29C4-4D65-9B61-9199AFD7DFE4}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Layer1" ID="{D197E3F0-B7A6-4E79-BC40-942238777342}"/>
+						<Switch Name="Layer2" ID="{DE331A7C-E838-4EB1-81BC-945B5EEB6204}"/>
+						<Switch Name="Layer3" ID="{D85E9E23-4029-40E9-A8A8-F3AAC14D18FA}"/>
+						<Switch Name="Layer4" ID="{2BA15960-3931-426C-B984-4595DC0905E6}"/>
+						<Switch Name="Layer5" ID="{CD3156F2-C864-4FDC-B9DF-E9C517AAE0D9}"/>
+						<Switch Name="Layer6" ID="{08D17EE4-9538-49A9-AF77-6AC5F93D5314}"/>
+						<Switch Name="Layer7" ID="{03F8B6FB-351C-41F8-9310-E1474BB4635D}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Progress" ID="{AA06989B-CDFD-47A0-98BE-7ECB9BBCD57E}"/>
+						<Curve Name="" ID="{ADDB38D1-F714-4BE8-BF46-56FD729BD6A6}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>3</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>5</XPos>
+									<YPos>4</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>7</XPos>
+									<YPos>5</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>8</XPos>
+									<YPos>6</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>10</XPos>
+									<YPos>7</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

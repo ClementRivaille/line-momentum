@@ -95,3 +95,8 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+*WwiseProject/.cache/
+*WwiseProject/**/*.akd
+*WwiseProject/**/.validationcache
+*WwiseProject/**/*.wem

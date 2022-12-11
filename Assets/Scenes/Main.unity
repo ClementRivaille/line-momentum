@@ -447,7 +447,7 @@ MonoBehaviour:
   Tutorials:
   - level: 0
     text: {fileID: 537070069}
-  - level: 1
+  - level: 4
     text: {fileID: 1977388442}
 --- !u!1 &276027449
 GameObject:
@@ -1372,6 +1372,16 @@ MonoBehaviour:
       groupGuidInternal: 
       WwiseObjectReference: {fileID: 11400000, guid: 2d13c19af7672054b8f912d8135ed1a6, type: 2}
     beats: 020000000600000008000000
+  - id: 4
+    color: {r: 0.75686276, g: 0.40392157, b: 0.47843137, a: 1}
+    barColor: {r: 0.8235294, g: 0.6862745, b: 0.7176471, a: 1}
+    State:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 87249f47d389a6946ad6f670f32d6d0d, type: 2}
+    beats: 0200000003000000050000000600000008000000
   - id: 1
     color: {r: 0, g: 0.8113208, b: 0.7767178, a: 1}
     barColor: {r: 0.36777, g: 0.943, b: 0.91799, a: 1}
@@ -1392,6 +1402,16 @@ MonoBehaviour:
       groupGuidInternal: 
       WwiseObjectReference: {fileID: 11400000, guid: 55ea02fc0cafd3143856b5055c137f30, type: 2}
     beats: 0000000002000000050000000700000008000000
+  - id: 5
+    color: {r: 0.08627451, g: 0.2627451, b: 0.20784314, a: 1}
+    barColor: {r: 0.5787796, g: 0.637, b: 0.6198764, a: 1}
+    State:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: eb11673a83255574092d68215b05a4a5, type: 2}
+    beats: 00000000030000000600000009000000
   - id: 3
     color: {r: 0.44313726, g: 0.56078434, b: 0.8784314, a: 1}
     barColor: {r: 0.6392157, g: 0.70980394, b: 0.9058824, a: 1}
